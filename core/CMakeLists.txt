@@ -2,7 +2,7 @@
 # ---------------------------------------------------------
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-project(CNCCore)
+project(Core)
 SET(${PROJECT_NAME} 1.0)
 
 if(MSVC)
