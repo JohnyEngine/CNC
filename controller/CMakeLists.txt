@@ -3,7 +3,6 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
 project(Controller)
-SET(${PROJECT_NAME} 1.0)
 
 if(MSVC)
 	add_definitions( -DNOMINMAX )
