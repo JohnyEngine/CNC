@@ -1,5 +1,3 @@
-#include "Octree.h"
-
 /**
  * \class Octree
  * \brief Generic octree template
@@ -16,6 +14,8 @@
  * default, but should be set higher when the size of \a T is small. <b>Must be
  * a power of two.</b>
  */
+
+#include <assert.h>
 
 /**
  * \param size Size of octree, in nodes. Should be a power of two. For example,

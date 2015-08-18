@@ -84,8 +84,8 @@ public:
 	//! Comparison operator.
 	bool operator==(const Vector3<T> &b) const
 	{
-		double epsilon = 1e-5;
-		double epsilon2 = epsilon * epsilon;
+		T epsilon = 1e-5;
+		T epsilon2 = epsilon * epsilon;
 		return (((this->x - b.x) * (this->x - b.x) + (this->y - b.y) * (this->y
 				- b.y) + (this->z - b.z) * (this->z - b.z)) <= epsilon2);
 	}
@@ -102,7 +102,7 @@ public:
 	void Zero(void);
 
 	//! Sets the vector to the given coordinates.
-	void Set(float x, float y, float z)
+	void Set(T x, T y, T z)
 	{
 		this->x = x;
 		this->y = y;

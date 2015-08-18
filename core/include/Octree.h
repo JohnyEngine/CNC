@@ -153,4 +153,6 @@ private:
     int size_;
 };
 
+#include "Octree.inl"
+
 #endif // __OCTREE_H_
