@@ -1,66 +1,47 @@
-///////////////////////////////////////////////////////////////////////////////
-// Name               : FileSTL.cpp
-// Purpose            : Reads a STL File
-// Thread Safe        : Yes
-// Platform dependent : No
-// Compiler Options   :
-// Author             : Tobias Schaefer
-// Created            : 11.06.2011
-// Copyright          : (C) 2011 Tobias Schaefer <tobiassch@users.sourceforge.net>
-// Licence            : GNU General Public License version 3.0 (GPLv3)
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
-///////////////////////////////////////////////////////////////////////////////
-
 #include "STLImporter.h"
 
 #include <stdint.h>
+#include <fstream>
+#include <tchar.h>
+#include <assert.h>
 
-FileSTL::FileSTL()
+
+#define LogMessage(message)
+
+STLImporter::STLImporter()
 {
 }
 
-FileSTL::~FileSTL()
+STLImporter::~STLImporter()
 {
 }
 
-bool FileSTL::ReadFile(const std::string & fileName)
+
+
+bool STLImporter::ReadFile(const std::string & fileName)
 {
-	error.Clear();
+	mError.clear();
 	this->mFileName = fileName;
-	wxFFileInputStream inStream(fileName);
+	std::ifstream inStream(fileName);
 
-	wxLogMessage(wxString::Format(_T("Opening File:") + fileName));
+	LogMessage(std::string(_T("Opening File:") + fileName));
 
-	if(!inStream.IsOk()){
-		error += _T("STL File ") + fileName + _T(": File won't open.\n");
+	if(!inStream.is_open()){
+		mError += _T("STL File ") + fileName + _T(": File won't open.\n");
 		return false;
 	}
 
 	return ReadStream(inStream);
 }
 
-bool FileSTL::ReadStream(std::istream & stream)
+bool STLImporter::ReadStream(std::istream & stream)
 {
 	// Find the header of the STL file:
 	char header[6];
 	header[5] = 0;
 
-	if(stream.Read(header, 5).LastRead() != 5){
-		error +=
-		_T("STL File ") + filename + _T(": File contains no header.\n");
+	if(!stream.read(header, 5)){
+		mError += _T("STL File ") + mFileName + _T(": File contains no header.\n");
 		return false;
 	}
 	if(strncmp(header, "solid", 5) == 0){
@@ -77,39 +58,59 @@ bool FileSTL::ReadStream(std::istream & stream)
 
 }
 
-bool FileSTL::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
+template<typename T>
+void STLImporter::Read(std::istream & stream, T* buffer, std::size_t count)
+{
+	if (buffer)
+	{
+		T* data = buffer;
+
+		for (size_t i = 0; i < count; i++)
+		{
+			if (!stream)
+				break;
+
+			stream >> *data;
+
+			data += sizeof(T);
+		}
+	}
+}
+
+bool STLImporter::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 {
 //	wxString temp;
-	wxDataInputStream binaryStream(stream);
+	std::istream& binaryStream(stream);
 
-	unsigned char header[81];
+	char header[81];
 	header[80] = 0;
 	if(hasRead5Byte){
-		binaryStream.Read8(header, 80 - 5);
+		binaryStream.read(header, 80 - 5);
 	}else{
-		binaryStream.Read8(header, 80);
+		binaryStream.read(header, 80);
 	}
-	if(stream.Eof()){
-		error += _T(
-				"STL File ") + filename + _T(": File contains no header.\n");
+	if(stream.eof()){
+		mError += _T("STL File ") + mFileName + _T(": File contains no header.\n");
 		return false;
 	}
 	// Set up a new geometry object.
 	Geometry* g = new Geometry();
-	g->name = filename;
+	g->name = mFileName;
 	g->color = color;
 	g->colorNewObjects = color;
 
-	geometry.Clear(); // Clear the old geometry and
-	geometry.Add(g); //insert the new one.
-	size_t nGeometry = geometry.GetCount() - 1;
-	wxASSERT(nGeometry==0);
+	geometry.clear(); // Clear the old geometry and
+	geometry.push_back(GeometryPtr(g)); //insert the new one.
+	size_t nGeometry = geometry.size() - 1;
+	assert(nGeometry==0);
 
 	// Binary STL File
-	uint32_t nrOfTriangles = binaryStream.Read32();
+	uint32_t nrOfTriangles = 0;
 
-	if(stream.Eof()){
-		error += _T("STL File ") + filename + _T(": File to short!");
+	Read(binaryStream, &nrOfTriangles);
+
+	if(stream.eof()){
+		mError += _T("STL File ") + mFileName + _T(": File to short!");
 		return false;
 	}
 
@@ -117,32 +118,33 @@ bool FileSTL::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 	unsigned char j;
 	float coord[12];
 
-	wxASSERT(sizeof(float)==4);
+	assert(sizeof(float)==4);
 
 	uint16_t attribute;
 
 	Triangle tri;
 	for(i = 0; i < nrOfTriangles; i++){
-		binaryStream.Read32((uint32_t *) &coord, 12);
+		Read(binaryStream, coord, 12);
 
-		if(stream.Eof()){
-			error += _T("STL File ") + filename + _T(": File to short!");
-			return false;
-		}
-		attribute = binaryStream.Read16();
-
-		if(stream.Eof()){
-			error += _T( "STL File ") + filename + _T(": File to short!");
+		if(stream.eof()){
+			mError += _T("STL File ") + mFileName + _T(": File to short!");
 			return false;
 		}
 
-		Vector3 color;
+		Read(binaryStream, &attribute);
+
+		if (stream.eof()){
+			mError += _T("STL File ") + mFileName + _T(": File to short!");
+			return false;
+		}
+
+		FVector3 color;
 		if(attribute & (1 << 15)){
 			color.x = (float) ((attribute >> 0) & 31) / 31.0;
 			color.y = (float) ((attribute >> 5) & 31) / 31.0;
 			color.z = (float) ((attribute >> 10) & 31) / 31.0;
 		}else{
-			color = geometry[nGeometry].colorNewObjects;
+			color = geometry[nGeometry]->colorNewObjects;
 		}
 
 		for(j = 0; j < 3; j++){
@@ -165,25 +167,26 @@ bool FileSTL::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 //			geometry[nGeometry].AddTriangle(tri.p[0], tri.p[1], tri.p[2]);
 //		}
 
-		geometry[nGeometry].AddTriangle(tri, false);
+		geometry[nGeometry]->AddTriangle(tri, false);
 
 		//			if(i <= 1){
-		//				wxLogMessage(wxString::Format(_T("n: %.1f %.1f %.1f"),
+		//				LogMessage(wxString::Format(_T("n: %.1f %.1f %.1f"),
 		//						tri->n.x, tri->n.y, tri->n.z));
 		//				for(j = 0; j < 3; j++)
 		//
-		//					wxLogMessage(wxString::Format(_T("p: %.1f %.1f %.1f"),
+		//					LogMessage(wxString::Format(_T("p: %.1f %.1f %.1f"),
 		//							tri->p[j].x, tri->p[j].y, tri->p[j].z));
 		//			}
 	}
 	return true;
 }
 
-void FileSTL::WriteStream(std::ostream & stream, Geometry & g)
+void STLImporter::WriteStream(std::ostream & stream, Geometry & g)
 {
-	wxDataOutputStream binaryStream(stream);
+#if 0
+	std::ostream& binaryStream(stream);
 
-	wxUint8 header[81] =
+	unsigned char header[81] =
 			"Generated by Generic CAM.                                                       ";
 
 	binaryStream.Write8(header, 80);
@@ -209,21 +212,31 @@ void FileSTL::WriteStream(std::ostream & stream, Geometry & g)
 		col |= (((int) floor(g.triangles[n].c[0].x * 32)) & 31) << 10;
 		binaryStream.Write16(col);
 	}
+#endif
 }
 
-bool FileSTL::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
+std::string STLImporter::trim(std::string& str)
+{
+	size_t first = str.find_first_not_of(' ');
+	size_t last = str.find_last_not_of(' ');
+	return str.substr(first, (last - first + 1));
+}
+
+bool STLImporter::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 {
 
-	wxTextInputStream textStream(stream);
-	wxString word, line;
+	std::istream& textStream(stream);
+	std::string word, line;
 
-	if(!hasRead5Byte)
-		word = textStream.ReadLine().Trim(false);
-	else
-		word = _T("solid ") + textStream.ReadLine().Trim(false);
+	getline(textStream, word);
+	trim(word);
 
-	if(!word.StartsWith(_T("solid"))){
-		error += _T( "STL Text File ") + filename + _T(": Incorrect file.");
+	if (hasRead5Byte)
+		word = _T("solid ");
+
+
+	if(!word.find_first_of(_T("solid"))){
+		mError += _T("STL Text File ") + mFileName + _T(": Incorrect file.");
 		return false;
 	}
 
@@ -232,65 +245,73 @@ bool FileSTL::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 	Triangle tri;
 	unsigned int n;
 	unsigned char j, m;
-	wxString temp;
+	std::string temp;
 
-	geometry.Clear();
+	geometry.clear();
 
-	while(word.StartsWith(_T("solid"), &temp)){
-		temp = temp.Trim(false);
+	while ((temp = word.substr(word.find_first_of(_T("solid")))).size()){
+		trim(temp);
+
 		// Set up a new geometry object.
 		Geometry* g = new Geometry();
-		if(temp.IsEmpty()){
-			g->name = filename;
+		if(temp.empty()){
+			g->name = mFileName;
 		}else{
 			g->name = temp;
 		}
 		g->color = color;
 		g->colorNewObjects = color;
-		geometry.Add(g);
-		n = geometry.GetCount() - 1;
+		geometry.push_back(GeometryPtr(g));
+		n = geometry.size() - 1;
 
-		word = textStream.ReadWord().Trim(false);
-		while(word.Cmp(_T("facet")) == 0){
-			word = textStream.ReadWord().Trim(false);
-			if(word.Cmp(_T("normal")) == 0){
+		textStream >> word;
+		trim(word);
+		while(word.compare(_T("facet")) == 0){
+			textStream >> word;
+			trim(word);
+			if (word.compare(_T("normal")) == 0){
 				textStream >> normal[0] >> normal[1] >> normal[2];
 
 			}else{
 				normal[0] = normal[1] = normal[2] = 0.0;
 			}
-			word = textStream.ReadWord().Trim(false);
-			if(word.Cmp(_T("outer")) != 0){
-				error += _T(
-						"STL Text File ") + filename + _T(": 'outer' missing.");
+			textStream >> word;
+			trim(word);
+			if (word.compare(_T("outer")) != 0){
+				mError += _T(
+					"STL Text File ") + mFileName + _T(": 'outer' missing.");
 				return false;
 			}
-			word = textStream.ReadWord().Trim(false);
-			if(word.Cmp(_T("loop")) != 0){
-				error += _T(
-						"STL Text File ") + filename + _T(": 'loop' missing.");
+			textStream >> word;
+			trim(word);
+			if (word.compare(_T("loop")) != 0){
+				mError += _T(
+					"STL Text File ") + mFileName + _T(": 'loop' missing.");
 				return false;
 			}
 			for(m = 0; m < 3; m++){
-				word = textStream.ReadWord().Trim(false);
-				if(word.Cmp(_T("vertex")) != 0){
-					error +=
-					_T("STL Text File ") + filename + _T(": 'vertex' missing.");
+				textStream >> word;
+				trim(word);
+				if (word.compare(_T("vertex")) != 0){
+					mError +=
+						_T("STL Text File ") + mFileName + _T(": 'vertex' missing.");
 					return false;
 				}
 				textStream >> coord[m * 3 + 0] >> coord[m * 3 + 1]
 						>> coord[m * 3 + 2];
 			}
-			word = textStream.ReadWord().Trim(false);
-			if(word.Cmp(_T("endloop")) != 0){
-				error +=
-				_T("STL Text File ") + filename + _T(": 'endloop' missing.");
+			textStream >> word;
+			trim(word);
+			if (word.compare(_T("endloop")) != 0){
+				mError +=
+					_T("STL Text File ") + mFileName + _T(": 'endloop' missing.");
 				return false;
 			}
-			word = textStream.ReadWord().Trim(false);
-			if(word.Cmp(_T("endfacet")) != 0){
-				error +=
-				_T("STL Text File ") + filename + _T(": 'endfacet' missing.");
+			textStream >> word;
+			trim(word);
+			if (word.compare(_T("endfacet")) != 0){
+				mError +=
+					_T("STL Text File ") + mFileName + _T(": 'endfacet' missing.");
 				return false;
 			}
 
@@ -301,13 +322,13 @@ bool FileSTL::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 				tri.n[j].x = normal[0];
 				tri.n[j].y = normal[1];
 				tri.n[j].z = normal[2];
-				tri.c[j] = geometry[n].colorNewObjects;
+				tri.c[j] = geometry[n]->colorNewObjects;
 			}
 
 			// The normal vectors seem to be defect for some files.
 			// if(false)... = Calculate normals
 			// if(true)...  = Use normals from file
-			geometry[n].AddTriangle(tri, false);
+			geometry[n]->AddTriangle(tri, false);
 //			if(false){
 //				geometry[n].AddTriangleWithNormals(tri.p[0], tri.p[1], tri.p[2],
 //						tri.n[0], tri.n[0], tri.n[0]);
@@ -315,16 +336,22 @@ bool FileSTL::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 //				geometry[n].AddTriangle(tri.p[0], tri.p[1], tri.p[2]);
 //			}
 
-			word = textStream.ReadWord().Trim(false);
+			textStream >> word;
+			trim(word);
 		}
-		if(word.Cmp(_T("endsolid")) != 0){
-			error += _T(
-					"STL Text File ") + filename + _T(": 'endsolid' missing.");
+		if (word.compare(_T("endsolid")) != 0){
+			mError += _T(
+				"STL Text File ") + mFileName + _T(": 'endsolid' missing.");
 			return false;
 		}
-		word = textStream.ReadLine().Trim(false);
-		if(!word.StartsWith(_T("solid"))) word = textStream.ReadLine().Trim(
-				false);
+
+		getline(textStream, word);
+		trim(word);
+		if(!word.find_first_of(_T("solid"))) 
+		{
+			getline(textStream, word);
+			trim(word);
+		}
 	}
 
 	return true;
