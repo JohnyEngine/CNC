@@ -12,7 +12,26 @@ struct Triangle {
 	FVector3 p[3]; //!< Position of vertices.
 	FVector3 n[3]; //!< Normal vectors.
 	FVector3 c[3]; //!< Color vectors.
+
+	/*!\brief Calculates normals for the corners of a triangle.
+	*
+	*  If no normals can be provided from elsewhere, this function
+	*  can generate a set. The normal vectors n[0] to n[2] are all
+	*  set normal to the plane of the triangle. Orientation is
+	*  right handed.
+	*/
+	void CalculateNormal()
+	{
+		n[0].Set((p[1] - p[0]) * (p[2] - p[1]));
+		n[0].Normalize();
+		n[1].Set(n[0]);
+		n[2].Set(n[0]);
+	}
+
 };
+
+
+typedef System::SmartPtr<Triangle> TrianglePtr;
 
 class Geometry : public Octree<float>
 {
@@ -31,9 +50,9 @@ public:
 	std::string name;
 	FVector3 color;
 	FVector3 colorNewObjects;
-	void AddTriangle(const Triangle &tri, bool copyNormals = true){};
+	void AddTriangle(const Triangle &tri, bool copyNormals = true);
 
-	std::vector<Triangle> triangles; //!< The storage of the geometric data.
+	std::vector<TrianglePtr> triangles; //!< The storage of the geometric data.
 
 private:
 };

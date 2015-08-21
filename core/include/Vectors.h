@@ -200,4 +200,27 @@ T norm( const Vector<T,N>& v )
     return sqrt( sum(v*v) );
 }
 
+/*
+template< typename T, int N >
+Vector<T, N> normalize(const Vector<T, N>& v)
+{
+	T d = norm(v);
+	Vector<T, N> p;
+
+	if (d > 0){
+		for (int i = 0; i < N; ++i) {
+			p(i) = v(i) / d;
+		}
+	}
+	else
+	{
+		for (int i = 0; i < N; ++i) {
+			p(i) = v(i);
+		}
+	}
+
+	return p;
+}
+*/
+
 #endif // __VECTOR_H_

@@ -121,6 +121,10 @@ public:
 
 	//! Swap the vector with a given vector.
 	void Swap(Vector3<T>& b);
+
+
+	//! Normalizes the length of a vector.
+	Vector3<T> Normalize(void);
 };
 
 typedef Vector3<float> FVector3;
