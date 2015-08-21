@@ -110,6 +110,15 @@ public:
 	}
 
 
+	//! Sets the vector to the given vector.
+	void Set(const Vector3<T> &b)
+	{
+		this->x = b.x;
+		this->y = b.y;
+		this->z = b.z;
+	}
+
+
 	//! Swap the vector with a given vector.
 	void Swap(Vector3<T>& b);
 };
