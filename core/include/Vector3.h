@@ -124,7 +124,15 @@ public:
 
 
 	//! Normalizes the length of a vector.
-	Vector3<T> Normalize(void);
+	void Normalize(void)
+	{
+		T d = sum(*this);
+		if (d > 0){
+			this->x /= d;
+			this->y /= d;
+			this->z /= d;
+		}
+	}
 };
 
 typedef Vector3<float> FVector3;

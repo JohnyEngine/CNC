@@ -22,15 +22,3 @@ void Vector3<T>::Swap(Vector3<T>& b)
 	b.z = this->z;
 	this->z = temp;
 }
-
-template< typename T >
-Vector3<T> Vector3<T>::Normalize(void)
-{
-	T d = Abs();
-	if (d > 0){
-		x /= d;
-		y /= d;
-		z /= d;
-	}
-	return Vector3<T>(x, y, z);
-}
