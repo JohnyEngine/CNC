@@ -96,8 +96,8 @@ bool STLImporter::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 	// Set up a new geometry object.
 	Geometry* g = new Geometry();
 	g->name = mFileName;
-	g->color.Set(color);
-	g->colorNewObjects.Set(color);
+	g->color.set(color);
+	g->colorNewObjects.set(color);
 
 	geometry.clear(); // Clear the old geometry and
 	geometry.push_back(GeometryPtr(g)); //insert the new one.
@@ -144,7 +144,7 @@ bool STLImporter::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 			color.y = (float) ((attribute >> 5) & 31) / 31.0;
 			color.z = (float) ((attribute >> 10) & 31) / 31.0;
 		}else{
-			color.Set(geometry[nGeometry]->colorNewObjects);
+			color.set(geometry[nGeometry]->colorNewObjects);
 		}
 
 		for(j = 0; j < 3; j++){
@@ -154,7 +154,7 @@ bool STLImporter::ReadStreamBinary(std::istream & stream, bool hasRead5Byte)
 			tri.n[j].x = coord[0];
 			tri.n[j].y = coord[1];
 			tri.n[j].z = coord[2];
-			tri.c[j].Set(color);
+			tri.c[j].set(color);
 		}
 
 		// The normal vectors seem to be defect for some files.
@@ -259,8 +259,8 @@ bool STLImporter::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 		}else{
 			g->name = temp;
 		}
-		g->color.Set(color);
-		g->colorNewObjects.Set(color);
+		g->color.set(color);
+		g->colorNewObjects.set(color);
 		geometry.push_back(GeometryPtr(g));
 		n = geometry.size() - 1;
 
@@ -322,7 +322,7 @@ bool STLImporter::ReadStreamAscii(std::istream & stream, bool hasRead5Byte)
 				tri.n[j].x = normal[0];
 				tri.n[j].y = normal[1];
 				tri.n[j].z = normal[2];
-				tri.c[j].Set(geometry[n]->colorNewObjects);
+				tri.c[j].set(geometry[n]->colorNewObjects);
 			}
 
 			// The normal vectors seem to be defect for some files.

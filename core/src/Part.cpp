@@ -22,7 +22,7 @@ Geometry& Part::getGeometry()
 
 void Part::setPosition(const FVector3& position)
 {
-	mPosition.Set(position.x, position.y, position.z);
+	mPosition.set(position);
 }
 
 FVector3 Part::getPosition()
@@ -32,7 +32,7 @@ FVector3 Part::getPosition()
 
 void Part::setScale(const FVector3& scale)
 {
-	mScale.Set(scale.x, scale.y, scale.z);
+	mScale.set(scale);
 }
 
 FVector3 Part::getScale()
@@ -42,7 +42,7 @@ FVector3 Part::getScale()
 
 void Part::setRotation(const FVector3& rotation)
 {
-	mRotation.Set(rotation.x, rotation.y, rotation.z);
+	mRotation.set(rotation);
 }
 
 FVector3 Part::getRotation()
@@ -52,7 +52,7 @@ FVector3 Part::getRotation()
 
 void Part::setColor(const FVector3& color)
 {
-	mColor.Set(color.x, color.y, color.z);
+	mColor.set(color);
 }
 
 FVector3 Part::getColor()

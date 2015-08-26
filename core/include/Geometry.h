@@ -22,10 +22,10 @@ struct Triangle {
 	*/
 	void CalculateNormal()
 	{
-		n[0].Set((p[1] - p[0]) * (p[2] - p[1]));
-		n[0].Normalize();
-		n[1].Set(n[0]);
-		n[2].Set(n[0]);
+		n[0].set((p[1] - p[0]) * (p[2] - p[1]));
+		n[0].normalize();
+		n[1].set(n[0]);
+		n[2].set(n[0]);
 	}
 
 };

@@ -13,6 +13,13 @@ public:
     template< typename T2 >
     Vector( const Vector<T2,N>& v );
 
+	void operator=(const Vector<T, N>& v)
+	{
+		for (int i = 0; i < N; ++i) {
+			data_[i] = v.data_[i];
+		}
+	}
+
     template< typename T2 >
     Vector<T,N>& operator= ( const Vector<T2,N>& v );
 
@@ -57,6 +64,33 @@ public:
             data_[i] /= x;
         }
     }
+
+	//! Sets the vector to the given vector.
+	void set(const Vector<T, N> &b) { *this = b; }
+
+
+	//! Swap the vector with a given vector.
+	void swap(Vector<T, N>& v)
+	{
+		float temp;
+
+        for ( int i = 0; i < N; ++i ) {
+			temp = v.data_[i];
+			v.data_[i] = data_[i];
+			data_[i] = temp;
+        }
+	}
+
+	//! Normalizes the length of a vector.
+	void normalize(void);
+
+	//! Zeros a vector.
+	void zero(void)
+	{
+		for (int i = 0; i < N; ++i) {
+			data_[i] = 0;
+		}
+	}
 
 private:
     T data_[N];
@@ -200,27 +234,14 @@ T norm( const Vector<T,N>& v )
     return sqrt( sum(v*v) );
 }
 
-/*
 template< typename T, int N >
-Vector<T, N> normalize(const Vector<T, N>& v)
+void Vector<T, N>::normalize(void)
 {
-	T d = norm(v);
-	Vector<T, N> p;
-
+	T d = sum(*this);
 	if (d > 0){
-		for (int i = 0; i < N; ++i) {
-			p(i) = v(i) / d;
-		}
+		(*this) /= d;
 	}
-	else
-	{
-		for (int i = 0; i < N; ++i) {
-			p(i) = v(i);
-		}
-	}
-
-	return p;
 }
-*/
+
 
 #endif // __VECTOR_H_
