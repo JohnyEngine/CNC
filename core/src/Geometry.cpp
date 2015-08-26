@@ -1,8 +1,12 @@
 #include "Geometry.h"
 
 Geometry::Geometry()
-	: Octree(TREE_SIZE)
 {
+}
+
+void Geometry::clear()
+{
+	triangles.clear();
 }
 
 void Geometry::AddTriangle(const Triangle &tri, bool copyNormals)

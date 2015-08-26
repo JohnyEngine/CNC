@@ -2,11 +2,8 @@
 #define __GEOMETRY_H_
 
 #include "Global.h"
-#include "Octree.h"
 #include <vector>
 
-
-#define TREE_SIZE 4096
 
 struct Triangle {
 	FVector3 p[3]; //!< Position of vertices.
@@ -30,21 +27,18 @@ struct Triangle {
 
 };
 
-
 typedef System::SmartPtr<Triangle> TrianglePtr;
 
-class Geometry : public Octree<float>
+class Geometry
 {
 public:
 	Geometry();
 
 	~Geometry(){}
 
-	void clear(){}
+	void clear();
 
-	void add(Geometry* geometry){}
-
-	std::size_t getCount(){ return 0; }
+	//void add(Geometry* geometry){}
 
 //protected:
 	std::string name;
