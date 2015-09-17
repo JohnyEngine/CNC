@@ -225,7 +225,7 @@ void TaskManager::stop()
 #ifdef __ANDROID__
         if (status != 0 && )
         {
-            status = pthread_kill(mThreadHandle, SIGUSR1);
+            status = pthread_kill(mThreadHandle,  );
         }
 #endif
         if (status != 0)
