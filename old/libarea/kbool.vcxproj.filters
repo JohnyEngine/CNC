@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4e042823-9f03-42e8-8a38-457a6f592387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{edd2d5ba-9f60-45e0-9c75-a8e3ff40e99d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\booleng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\graphlst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\link.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\lpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\scanbeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\booleng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\graphlst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\lpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\include\scanbeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dan\Downloads\boolean_6_97\boolean\modules\kbool\src\CMakeLists.txt" />
+  </ItemGroup>
+</Project>
