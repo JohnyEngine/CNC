@@ -389,7 +389,7 @@ void MarkedList::CopySelectedItems()
 #if wxUSE_UNICODE
 	wifstream ifs(Ttc(temp_file.GetFullPath().c_str()));
 #else
-	ifstream ifs(temp_file.GetFullPath().ToStdString().c_str());
+	ifstream ifs(temp_file.GetFullPath());
 #endif
 	if(!ifs)return;
 

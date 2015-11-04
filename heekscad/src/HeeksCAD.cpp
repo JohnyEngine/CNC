@@ -799,7 +799,7 @@ static HeeksObj* ReadSTEPFileFromXMLElement(TiXmlElement* pElem)
 					wofstream ofs(Ttc(temp_file.GetFullPath().c_str()));
 #endif
 #else
-					ofstream ofs(temp_file.GetFullPath().ToStdString().c_str());
+					ofstream ofs(temp_file.GetFullPath());
 #endif
 					ofs<<file_text;
 				}
@@ -4259,7 +4259,7 @@ void HeeksCADapp::Paste(HeeksObj* paste_into, HeeksObj* paste_before)
 #if wxUSE_UNICODE
 		wofstream ofs(Ttc(temp_file.GetFullPath().c_str()));
 #else
-		ofstream ofs(temp_file.GetFullPath().ToStdString().c_str());
+		ofstream ofs(temp_file.GetFullPath());
 #endif
 		ofs<<fstr.c_str();
 	}
@@ -4340,12 +4340,7 @@ void HeeksCADapp::create_font()
 	glGenTextures(1, &m_font_tex_number );
 
 	//Create our glFont from verdana.glf, using texture 1
-
-#if wxUSE_UNICODE
 	m_gl_font.Create((char*)Ttc(fstr.c_str()), m_font_tex_number);
-#else
-	m_gl_font.Create(fstr.ToStdString().c_str(), m_font_tex_number);
-#endif
 	m_gl_font_initialized = true;
 }
 
@@ -4575,7 +4570,7 @@ void HeeksCADapp::GetPluginsFromCommandLineParams(std::list<wxString> &plugins)
 		cmdLineDesc[0].kind = wxCMD_LINE_PARAM;
 		cmdLineDesc[0].shortName = NULL;
 		cmdLineDesc[0].longName = NULL;
-		cmdLineDesc[0].description = "input files";
+		cmdLineDesc[0].description = _T("input files");
 		cmdLineDesc[0].type = wxCMD_LINE_VAL_STRING;
 		cmdLineDesc[0].flags = wxCMD_LINE_PARAM_OPTIONAL | wxCMD_LINE_PARAM_MULTIPLE;
 

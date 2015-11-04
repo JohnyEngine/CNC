@@ -1,0 +1,7 @@
+SET BOOST_PYTHON_PATH=D:\boost
+SET PYTHON_INCLUDE=d:\Python27\include
+SET CASROOT=D:\OpenCASCADE\opencascade-6.9.1
+SET WXWIN=D:\wxWidgets
+SET LIBAREAPATH=D:\libarea
+SET HEEKSCAD1PATH= 
+START devenv

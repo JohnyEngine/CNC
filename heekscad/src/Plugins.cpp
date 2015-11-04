@@ -266,13 +266,9 @@ void ReadPluginsList(std::list<PluginData> &plugins)
 	}
 #endif
 
-	wxString plugins_file = wxGetApp().GetExeFolder() + _T("/plugins.txt");
 
-#if wxUSE_UNICODE
-	ifstream ifs(Ttc(plugins_file.c_str()));
-#else
-	ifstream ifs(plugins_file.ToStdString().c_str());
-#endif
+	wxString plugins_file = wxGetApp().GetExeFolder() + _T("/plugins.txt");
+    ifstream ifs(Ttc(plugins_file.c_str()));
 	if(!(!ifs))
 	{
 		char s[1024] = "";

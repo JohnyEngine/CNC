@@ -2,16 +2,10 @@
 // Copyright (c) 2009, Dan Heeks
 // This program is released under the BSD license. See the file COPYING for details.
 
+#include "stdafx.h"
 #include "dxf.h"
 
 #include <wx/regex.h>
-
-#if wxUSE_UNICODE == 0
-#ifdef wprintf 
-#undef wprintf
-#endif
-#define wprintf printf
-#endif
 
 using namespace std;
 static const double Pi = 3.14159265358979323846264338327950288419716939937511;
@@ -186,7 +180,6 @@ CDxfRead::CDxfRead(const char* filepath)
 	m_ifs = new ifstream(filepath);
 	if(!(*m_ifs)){
 		m_fail = true;
-
 		wprintf(wxT("DXF file didn't load\n"));
 		return;
 	}
