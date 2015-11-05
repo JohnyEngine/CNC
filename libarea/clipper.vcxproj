@@ -70,6 +70,9 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)\lib\$(TargetName)d$(TargetExt)</OutputFile>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -96,6 +99,9 @@
     <PostBuildEvent>
       <Command />
     </PostBuildEvent>
+    <Lib>
+      <OutputFile>$(SolutionDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arc.cpp" />

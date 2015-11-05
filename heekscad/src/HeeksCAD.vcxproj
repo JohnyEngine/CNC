@@ -39,7 +39,6 @@
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -273,11 +272,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\interface\DoubleInput.cpp" />
+    <ClCompile Include="..\interface\Geom.cpp" />
+    <ClCompile Include="..\interface\HDialogs.cpp" />
     <ClCompile Include="..\interface\HeeksCADInterface.cpp" />
     <ClCompile Include="..\interface\HeeksColor.cpp" />
     <ClCompile Include="..\interface\HeeksObj.cpp" />
+    <ClCompile Include="..\interface\HeeksObjDlg.cpp" />
+    <ClCompile Include="..\interface\IdNamedObj.cpp" />
+    <ClCompile Include="..\interface\IdNamedObjList.cpp" />
     <ClCompile Include="..\interface\LeftAndRight.cpp" />
     <ClCompile Include="..\interface\MarkedObject.cpp" />
+    <ClCompile Include="..\interface\NiceTextCtrl.cpp" />
     <ClCompile Include="..\interface\ObjList.cpp" />
     <ClCompile Include="..\interface\PictureFrame.cpp" />
     <ClCompile Include="..\interface\PropertyCheck.cpp" />
@@ -358,17 +363,18 @@
     <ClCompile Include="CoordinateSystem.cpp" />
     <ClCompile Include="CorrelationTool.cpp" />
     <ClCompile Include="Cuboid.cpp" />
-    <ClCompile Include="CxfFont.cpp" />
+    <ClCompile Include="CuboidDlg.cpp" />
     <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="DigitizedPoint.cpp" />
     <ClCompile Include="DigitizeMode.cpp" />
     <ClCompile Include="DimensionDrawing.cpp" />
     <ClCompile Include="Drawing.cpp" />
     <ClCompile Include="dxf.cpp" />
+    <ClCompile Include="Edge.cpp" />
     <ClCompile Include="EndedObject.cpp" />
+    <ClCompile Include="ExitMainLoop.cpp" />
     <ClCompile Include="Face.cpp" />
     <ClCompile Include="FaceTools.cpp" />
-    <ClCompile Include="FastCurves.cpp" />
     <ClCompile Include="glfont2.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
@@ -387,19 +393,24 @@
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="HAngularDimension.cpp" />
     <ClCompile Include="HArc.cpp" />
+    <ClCompile Include="HArea.cpp" />
     <ClCompile Include="HCircle.cpp" />
     <ClCompile Include="HDimension.cpp" />
+    <ClCompile Include="HDxf.cpp" />
     <ClCompile Include="HeeksCAD.cpp" />
     <ClCompile Include="HeeksFrame.cpp" />
     <ClCompile Include="HeeksPrintout.cpp" />
     <ClCompile Include="HEllipse.cpp" />
+    <ClCompile Include="HGear.cpp" />
     <ClCompile Include="HILine.cpp" />
     <ClCompile Include="HImage.cpp" />
+    <ClCompile Include="History.cpp" />
     <ClCompile Include="HLine.cpp" />
     <ClCompile Include="HPoint.cpp" />
     <ClCompile Include="HSpline.cpp" />
     <ClCompile Include="HText.cpp" />
     <ClCompile Include="HXml.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="InputModeCanvas.cpp" />
     <ClCompile Include="LineArcDrawing.cpp" />
     <ClCompile Include="Loop.cpp" />
@@ -414,7 +425,6 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="MarkedList.cpp" />
-    <ClCompile Include="MatrixFactorization.cpp" />
     <ClCompile Include="ObjPropsCanvas.cpp" />
     <ClCompile Include="odcombo.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -432,6 +442,7 @@
     <ClCompile Include="PointDrawing.cpp" />
     <ClCompile Include="PointOrWindow.cpp" />
     <ClCompile Include="PropertiesCanvas.cpp" />
+    <ClCompile Include="PropertyChange.cpp" />
     <ClCompile Include="PropertyTrsf.cpp" />
     <ClCompile Include="propgrid.cpp" />
     <ClCompile Include="props.cpp">
@@ -445,15 +456,18 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RegularShapesDrawing.cpp" />
+    <ClCompile Include="RemoveOrAddTool.cpp" />
     <ClCompile Include="RS274X.cpp" />
     <ClCompile Include="RuledSurface.cpp" />
     <ClCompile Include="Ruler.cpp" />
+    <ClCompile Include="Sectioning.cpp" />
     <ClCompile Include="SelectMode.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="ShapeData.cpp" />
     <ClCompile Include="ShapeTools.cpp" />
     <ClCompile Include="Sketch.cpp" />
     <ClCompile Include="Solid.cpp" />
+    <ClCompile Include="SolidTools.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -479,14 +493,19 @@
   <ItemGroup>
     <ClInclude Include="..\interface\Box.h" />
     <ClInclude Include="..\interface\DoubleInput.h" />
+    <ClInclude Include="..\interface\Geom.h" />
+    <ClInclude Include="..\interface\HDialogs.h" />
     <ClInclude Include="..\interface\HeeksCADInterface.h" />
     <ClInclude Include="..\interface\HeeksColor.h" />
     <ClInclude Include="..\interface\HeeksObj.h" />
+    <ClInclude Include="..\interface\HeeksObjDlg.h" />
+    <ClInclude Include="..\interface\IdNamedObj.h" />
+    <ClInclude Include="..\interface\IdNamedObjList.h" />
     <ClInclude Include="..\interface\InputMode.h" />
     <ClInclude Include="..\interface\LeftAndRight.h" />
     <ClInclude Include="..\interface\MarkedObject.h" />
     <ClInclude Include="..\interface\Material.h" />
-    <ClInclude Include="..\interface\ObjectCanvas.h" />
+    <ClInclude Include="..\interface\NiceTextCtrl.h" />
     <ClInclude Include="..\interface\ObjList.h" />
     <ClInclude Include="..\interface\Observer.h" />
     <ClInclude Include="..\interface\PictureFrame.h" />
@@ -504,7 +523,6 @@
     <ClInclude Include="..\interface\Tool.h" />
     <ClInclude Include="..\interface\ToolImage.h" />
     <ClInclude Include="..\interface\ToolList.h" />
-    <ClInclude Include="..\sketchsolve\src\timer.h" />
     <ClInclude Include="..\tinyxml\tinystr.h" />
     <ClInclude Include="..\tinyxml\tinyxml.h" />
     <ClInclude Include="AboutBox.h" />
@@ -516,7 +534,7 @@
     <ClInclude Include="CoordinateSystem.h" />
     <ClInclude Include="CorrelationTool.h" />
     <ClInclude Include="Cuboid.h" />
-    <ClInclude Include="CxfFont.h" />
+    <ClInclude Include="CuboidDlg.h" />
     <ClInclude Include="Cylinder.h" />
     <ClInclude Include="DigitizedPoint.h" />
     <ClInclude Include="DigitizeMode.h" />
@@ -527,7 +545,6 @@
     <ClInclude Include="EndedObject.h" />
     <ClInclude Include="Face.h" />
     <ClInclude Include="FaceTools.h" />
-    <ClInclude Include="FastCurves.h" />
     <ClInclude Include="glfont2.h" />
     <ClInclude Include="GLList.h" />
     <ClInclude Include="GraphicsCanvas.h" />
@@ -537,20 +554,25 @@
     <ClInclude Include="Group.h" />
     <ClInclude Include="HAngularDimension.h" />
     <ClInclude Include="HArc.h" />
+    <ClInclude Include="HArea.h" />
     <ClInclude Include="HCircle.h" />
     <ClInclude Include="HDimension.h" />
+    <ClInclude Include="HDxf.h" />
     <ClInclude Include="HeeksCAD.h" />
     <ClInclude Include="HeeksConfig.h" />
     <ClInclude Include="HeeksFrame.h" />
     <ClInclude Include="HeeksPrintout.h" />
     <ClInclude Include="HEllipse.h" />
+    <ClInclude Include="HGear.h" />
     <ClInclude Include="HILine.h" />
     <ClInclude Include="HImage.h" />
+    <ClInclude Include="History.h" />
     <ClInclude Include="HLine.h" />
     <ClInclude Include="HPoint.h" />
     <ClInclude Include="HSpline.h" />
     <ClInclude Include="HText.h" />
     <ClInclude Include="HXml.h" />
+    <ClInclude Include="Index.h" />
     <ClInclude Include="InputModeCanvas.h" />
     <ClInclude Include="Intersector.h" />
     <ClInclude Include="LineArcDrawing.h" />
@@ -565,18 +587,23 @@
     <ClInclude Include="Plugins.h" />
     <ClInclude Include="PointDrawing.h" />
     <ClInclude Include="PointOrWindow.h" />
+    <ClInclude Include="propdev.h" />
     <ClInclude Include="PropertiesCanvas.h" />
+    <ClInclude Include="PropertyChange.h" />
     <ClInclude Include="PropertyTrsf.h" />
     <ClInclude Include="propgrid.h" />
     <ClInclude Include="RegularShapesDrawing.h" />
+    <ClInclude Include="RemoveOrAddTool.h" />
     <ClInclude Include="RuledSurface.h" />
     <ClInclude Include="Ruler.h" />
+    <ClInclude Include="Sectioning.h" />
     <ClInclude Include="SelectMode.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="ShapeData.h" />
     <ClInclude Include="ShapeTools.h" />
     <ClInclude Include="Sketch.h" />
     <ClInclude Include="Solid.h" />
+    <ClInclude Include="SolidTools.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StlSolid.h" />

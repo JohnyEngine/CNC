@@ -1,1 +1,14 @@
 Build
+*.sdf
+*.suo
+*.bak
+HeeksCAD.exe
+*.opensdf
+Release
+ClipperRelease
+Debug
+ClipperDebug
+lib
+Unicode Release
+vc_msw
+vc_mswd
