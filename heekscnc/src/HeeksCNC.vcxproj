@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>HeeksCNC</ProjectName>
+    <ProjectGuid>{BE9260B2-CF4A-413B-87BE-4AD857278689}</ProjectGuid>
+    <RootNamespace>HeeksCNC</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(HEEKSCADPATH);$(CASROOT)\inc;$(WXWIN)\include;$(WXWIN)\include\msvc;../kurve/geometry;../kurve/messages;$(WXWIN)\lib\vc_dll\mswd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;__WXMSW__;__WXDEBUG__;_WINDOWS;NOPCH;WNT;_CRT_SECURE_NO_WARNINGS; WXUSINGDLL;HEEKSCNC;OPEN_SOURCE_GEOMETRY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;comctl32.lib;rpcrt4.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV2d.lib;TKV3d.lib;TKMesh.lib;TKAdvTools.lib;TKCPPExt.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;wxmsw28d_core.lib;wxmsw28d_aui.lib;wxmsw28d_gl.lib;wxbase28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\HeeksCNC.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(HEEKSCADPATH);$(WXWIN)\lib\vc_dll;$(CASROOT)\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>(commented) add a registry key</Message>
+      <Command>REM REG ADD HKCU\Software\HeeksCAD\plugins /v HeeksCNC /t REG_SZ /d "HeeksCNC/HeeksCNC.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(CASROOT)\inc;$(WXWIN)\include;$(WXWIN)\include\msvc;$(HEEKSCADPATH);../kurve/geometry;../kurve/messages;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;__WXMSW__;_WINDOWS;NOPCH;WNT;_CRT_SECURE_NO_WARNINGS;WXUSINGDLL;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;_SECURE_ATL =0;HEEKSCNC;OPEN_SOURCE_GEOMETRY;OP_SKETCHES_AS_CHILDREN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\vc_msw\HeeksCNC.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\vc_msw\</AssemblerListingLocation>
+      <ObjectFileName>.\vc_msw\</ObjectFileName>
+      <ProgramDataBaseFileName>vc_msw\HeeksCNC.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;comctl32.lib;rpcrt4.lib;wxmsw28_core.lib;wxmsw28_aui.lib;wxmsw28_gl.lib;wxbase28.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV2d.lib;TKV3d.lib;TKMesh.lib;TKAdvTools.lib;TKCPPExt.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\HeeksCNC.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;$(CASROOT)\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(CASROOT)\inc;$(WXWIN)\include;$(WXWIN)\lib\vc_dll\mswud;$(WXWIN)\include\msvc;$(HEEKSCADPATH);../kurve/geometry;../kurve/messages;$(LIBAREA_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;__WXMSW__;__WXDEBUG__;_WINDOWS;NOPCH;WNT;_CRT_SECURE_NO_WARNINGS;WXUSINGDLL;HEEKSCNC;OPEN_SOURCE_GEOMETRY;HEEKSPLUGIN;STABLE_OPS_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;comctl32.lib;rpcrt4.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV2d.lib;TKV3d.lib;TKMesh.lib;TKAdvTools.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;wxmsw28ud_core.lib;wxmsw28ud_aui.lib;wxmsw28ud_gl.lib;wxbase28ud.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\HeeksCNC.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;$(CASROOT)\win32\vc8\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>(commented) add a registry key</Message>
+      <Command>REM REG ADD HKCU\Software\HeeksCAD\plugins /v HeeksCNC /t REG_SZ /d "HeeksCNC/HeeksCNC.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>./;$(CASROOT)\inc;$(WXWIN)\include;$(WXWIN);$(WXWIN)\lib\vc_dll\mswu;$(WXWIN)\include\msvc;$(HEEKSCADPATH);../kurve/geometry;../kurve/messages;$(LIBAREA_PATH);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;__WXMSW__;_WINDOWS;NOPCH;WNT;_CRT_SECURE_NO_WARNINGS;WXUSINGDLL;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL=0;_SECURE_ATL =0;HEEKSCNC;OPEN_SOURCE_GEOMETRY;HEEKSPLUGIN;STABLE_OPS_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\vc_msw\HeeksCNC.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\vc_msw\</AssemblerListingLocation>
+      <ObjectFileName>.\vc_msw\</ObjectFileName>
+      <ProgramDataBaseFileName>vc_msw\HeeksCNC.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;comctl32.lib;rpcrt4.lib;wxmsw28u_core.lib;wxmsw28u_aui.lib;wxmsw28u_gl.lib;wxbase28u.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV3d.lib;TKMesh.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;$(CASROOT)\win32\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\heekscad\interface\Geom.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\HDialogs.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\HeeksColor.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\HeeksObj.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\HeeksObjDlg.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\IdNamedObj.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\IdNamedObjList.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\LeftAndRight.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\NiceTextCtrl.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\ObjList.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PictureFrame.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyCheck.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyChoice.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyColor.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyDouble.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyFile.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyInt.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyLength.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyList.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyString.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\PropertyVertex.cpp" />
+    <ClCompile Include="..\..\heekscad\interface\strconv.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\heekscad\interface\ToolImage.cpp" />
+    <ClCompile Include="..\..\heekscad\tinyxml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\heekscad\tinyxml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\heekscad\tinyxml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\heekscad\tinyxml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CNCPoint.cpp" />
+    <ClCompile Include="CTool.cpp" />
+    <ClCompile Include="CToolDlg.cpp" />
+    <ClCompile Include="DepthOp.cpp" />
+    <ClCompile Include="DepthOpDlg.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Drilling.cpp" />
+    <ClCompile Include="DrillingDlg.cpp" />
+    <ClCompile Include="Excellon.cpp" />
+    <ClCompile Include="HeeksCNC.cpp" />
+    <ClCompile Include="HeeksCNCInterface.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="NCCode.cpp" />
+    <ClCompile Include="Op.cpp" />
+    <ClCompile Include="OpDlg.cpp" />
+    <ClCompile Include="Operations.cpp" />
+    <ClCompile Include="OutputCanvas.cpp" />
+    <ClCompile Include="Pattern.cpp" />
+    <ClCompile Include="PatternDlg.cpp" />
+    <ClCompile Include="Patterns.cpp" />
+    <ClCompile Include="Pocket.cpp" />
+    <ClCompile Include="PocketDlg.cpp" />
+    <ClCompile Include="Profile.cpp" />
+    <ClCompile Include="ProfileDlg.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="ProgramCanvas.cpp" />
+    <ClCompile Include="ProgramDlg.cpp" />
+    <ClCompile Include="PythonString.cpp" />
+    <ClCompile Include="PythonStuff.cpp" />
+    <ClCompile Include="Reselect.cpp" />
+    <ClCompile Include="ScriptOp.cpp" />
+    <ClCompile Include="ScriptOpDlg.cpp" />
+    <ClCompile Include="Simulate.cpp" />
+    <ClCompile Include="SketchOp.cpp" />
+    <ClCompile Include="SketchOpDlg.cpp" />
+    <ClCompile Include="SolidsDlg.cpp" />
+    <ClCompile Include="SpeedOp.cpp" />
+    <ClCompile Include="SpeedOpDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="StockDlg.cpp" />
+    <ClCompile Include="Stocks.cpp" />
+    <ClCompile Include="Surface.cpp" />
+    <ClCompile Include="SurfaceDlg.cpp" />
+    <ClCompile Include="Surfaces.cpp" />
+    <ClCompile Include="Tag.cpp" />
+    <ClCompile Include="Tags.cpp" />
+    <ClCompile Include="Tools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\HeeksCADSVN\interface\InputMode.h" />
+    <ClInclude Include="..\..\heekscad\interface\Geom.h" />
+    <ClInclude Include="..\..\heekscad\interface\HDialogs.h" />
+    <ClInclude Include="..\..\heekscad\interface\HeeksColor.h" />
+    <ClInclude Include="..\..\heekscad\interface\HeeksObj.h" />
+    <ClInclude Include="..\..\heekscad\interface\HeeksObjDlg.h" />
+    <ClInclude Include="..\..\heekscad\interface\IdNamedObj.h" />
+    <ClInclude Include="..\..\heekscad\interface\IdNamedObjList.h" />
+    <ClInclude Include="..\..\heekscad\interface\LeftAndRight.h" />
+    <ClInclude Include="..\..\heekscad\interface\NiceTextCtrl.h" />
+    <ClInclude Include="..\..\heekscad\interface\ObjList.h" />
+    <ClInclude Include="..\..\heekscad\interface\PictureFrame.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyCheck.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyChoice.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyColor.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyDouble.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyFile.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyInt.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyLength.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyList.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyString.h" />
+    <ClInclude Include="..\..\heekscad\interface\PropertyVertex.h" />
+    <ClInclude Include="..\..\heekscad\interface\strconv.h" />
+    <ClInclude Include="..\..\heekscad\interface\ToolImage.h" />
+    <ClInclude Include="..\..\heekscad\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\heekscad\tinyxml\tinyxml.h" />
+    <ClInclude Include="CNCPoint.h" />
+    <ClInclude Include="CTool.h" />
+    <ClInclude Include="CToolDlg.h" />
+    <ClInclude Include="DepthOp.h" />
+    <ClInclude Include="DepthOpDlg.h" />
+    <ClInclude Include="Drilling.h" />
+    <ClInclude Include="DrillingDlg.h" />
+    <ClInclude Include="Excellon.h" />
+    <ClInclude Include="HeeksCNC.h" />
+    <ClInclude Include="HeeksCNCInterface.h" />
+    <ClInclude Include="HeeksCNCTypes.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="NCCode.h" />
+    <ClInclude Include="Op.h" />
+    <ClInclude Include="OpDlg.h" />
+    <ClInclude Include="Operations.h" />
+    <ClInclude Include="OutputCanvas.h" />
+    <ClInclude Include="Pattern.h" />
+    <ClInclude Include="PatternDlg.h" />
+    <ClInclude Include="Patterns.h" />
+    <ClInclude Include="Pocket.h" />
+    <ClInclude Include="PocketDlg.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="ProfileDlg.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="ProgramCanvas.h" />
+    <ClInclude Include="ProgramDlg.h" />
+    <ClInclude Include="PythonString.h" />
+    <ClInclude Include="PythonStuff.h" />
+    <ClInclude Include="Reselect.h" />
+    <ClInclude Include="ScriptOp.h" />
+    <ClInclude Include="ScriptOpDlg.h" />
+    <ClInclude Include="Simulate.h" />
+    <ClInclude Include="SketchOp.h" />
+    <ClInclude Include="SketchOpDlg.h" />
+    <ClInclude Include="SolidsDlg.h" />
+    <ClInclude Include="SpeedOp.h" />
+    <ClInclude Include="SpeedOpDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stock.h" />
+    <ClInclude Include="StockDlg.h" />
+    <ClInclude Include="Stocks.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="SurfaceDlg.h" />
+    <ClInclude Include="Surfaces.h" />
+    <ClInclude Include="Tag.h" />
+    <ClInclude Include="Tags.h" />
+    <ClInclude Include="Tools.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,7 +1,7 @@
 SET BOOST_PYTHON_PATH=D:\boost
-SET PYTHON_INCLUDE=C:\Python27\include
+SET PYTHON_INCLUDE=D:\Python27\include
 SET CASROOT=D:\OpenCASCADE\opencascade-6.9.1
 SET WXWIN=D:\wxWidgets
 SET LIBAREAPATH=D:\GitHub\CNC\libarea
-SET HEEKSCAD1PATH=D:\GitHub\CNC\heekscad
+SET HEEKSCADPATH=D:\GitHub\CNC\heekscad
 START devenv
