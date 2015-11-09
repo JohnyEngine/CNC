@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeeksCAD", "HeeksCAD.vcxproj", "{2702996F-5BCC-436D-A756-D9675FE828A8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeeksCAD", "HeeksCAD VC2013.vcxproj", "{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -26,16 +24,6 @@ Global
 		{2702996F-5BCC-436D-A756-D9675FE828A8}.Unicode Release with debug|Win32.Build.0 = Unicode Release|Win32
 		{2702996F-5BCC-436D-A756-D9675FE828A8}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
 		{2702996F-5BCC-436D-A756-D9675FE828A8}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Debug|Win32.Build.0 = Debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Release|Win32.ActiveCfg = Release|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Release|Win32.Build.0 = Release|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Release with debug|Win32.ActiveCfg = Unicode Release with debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Release with debug|Win32.Build.0 = Unicode Release with debug|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
-		{FC327BE9-6B07-4AAB-B0C6-16C27EDFAFC3}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

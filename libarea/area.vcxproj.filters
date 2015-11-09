@@ -18,6 +18,9 @@
     <ClCompile Include="Arc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="AreaBoolean.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -172,7 +172,6 @@ static void SetFromResult( CArea &area, Bool_Engine* booleng )
     }
 }
 
-/*
 void CArea::Subtract(const CArea& a2)
 {
 	Bool_Engine* booleng = new Bool_Engine();
@@ -217,4 +216,3 @@ void CArea::Thicken(double value)
 {
 	// only in clipper version, so far
 }
-*/

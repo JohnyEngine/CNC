@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{2bc78571-58f0-4166-9fc5-233d0dedd7e1}</UniqueIdentifier>
+    <Filter Include="Area">
+      <UniqueIdentifier>{516823a8-82df-492e-bbfb-299381be03fc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -15,7 +15,6 @@
     <ClCompile Include="CoordinateSystem.cpp" />
     <ClCompile Include="CorrelationTool.cpp" />
     <ClCompile Include="Cuboid.cpp" />
-    <ClCompile Include="CxfFont.cpp" />
     <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="DigitizedPoint.cpp" />
     <ClCompile Include="DigitizeMode.cpp" />
@@ -26,7 +25,6 @@
     <ClCompile Include="EndedObject.cpp" />
     <ClCompile Include="Face.cpp" />
     <ClCompile Include="FaceTools.cpp" />
-    <ClCompile Include="FastCurves.cpp" />
     <ClCompile Include="glfont2.cpp" />
     <ClCompile Include="GLList.cpp" />
     <ClCompile Include="GraphicsCanvas.cpp" />
@@ -60,7 +58,6 @@
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="MarkedList.cpp" />
     <ClCompile Include="..\interface\MarkedObject.cpp" />
-    <ClCompile Include="MatrixFactorization.cpp" />
     <ClCompile Include="..\interface\ObjList.cpp" />
     <ClCompile Include="ObjPropsCanvas.cpp" />
     <ClCompile Include="odcombo.cpp" />
@@ -116,6 +113,66 @@
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="Wire.cpp" />
     <ClCompile Include="wxImageLoader.cpp" />
+    <ClCompile Include="..\interface\Geom.cpp" />
+    <ClCompile Include="..\interface\HDialogs.cpp" />
+    <ClCompile Include="..\interface\HeeksObjDlg.cpp" />
+    <ClCompile Include="..\interface\IdNamedObj.cpp" />
+    <ClCompile Include="..\interface\IdNamedObjList.cpp" />
+    <ClCompile Include="..\interface\NiceTextCtrl.cpp" />
+    <ClCompile Include="CuboidDlg.cpp" />
+    <ClCompile Include="Edge.cpp" />
+    <ClCompile Include="ExitMainLoop.cpp" />
+    <ClCompile Include="HArea.cpp" />
+    <ClCompile Include="HDxf.cpp" />
+    <ClCompile Include="HGear.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="PropertyChange.cpp" />
+    <ClCompile Include="RemoveOrAddTool.cpp" />
+    <ClCompile Include="Sectioning.cpp" />
+    <ClCompile Include="SolidTools.cpp" />
+    <ClCompile Include="..\..\libarea\Arc.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Area.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaClipper.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaDxf.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaOrderer.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaPocket.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Circle.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\clipper.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Curve.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Construction.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Finite.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\kurve.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Matrix.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\offset.cpp">
+      <Filter>Area</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AboutBox.h" />
@@ -128,7 +185,6 @@
     <ClInclude Include="CoordinateSystem.h" />
     <ClInclude Include="CorrelationTool.h" />
     <ClInclude Include="Cuboid.h" />
-    <ClInclude Include="CxfFont.h" />
     <ClInclude Include="Cylinder.h" />
     <ClInclude Include="DigitizedPoint.h" />
     <ClInclude Include="DigitizeMode.h" />
@@ -140,7 +196,6 @@
     <ClInclude Include="EndedObject.h" />
     <ClInclude Include="Face.h" />
     <ClInclude Include="FaceTools.h" />
-    <ClInclude Include="FastCurves.h" />
     <ClInclude Include="glfont2.h" />
     <ClInclude Include="GLList.h" />
     <ClInclude Include="GraphicsCanvas.h" />
@@ -178,7 +233,6 @@
     <ClInclude Include="MarkedList.h" />
     <ClInclude Include="..\interface\MarkedObject.h" />
     <ClInclude Include="..\interface\Material.h" />
-    <ClInclude Include="..\interface\ObjectCanvas.h" />
     <ClInclude Include="..\interface\ObjList.h" />
     <ClInclude Include="ObjPropsCanvas.h" />
     <ClInclude Include="..\interface\Observer.h" />
@@ -217,7 +271,6 @@
     <ClInclude Include="..\interface\strconv.h" />
     <ClInclude Include="StretchTool.h" />
     <ClInclude Include="svg.h" />
-    <ClInclude Include="..\sketchsolve\src\timer.h" />
     <ClInclude Include="..\tinyxml\tinystr.h" />
     <ClInclude Include="..\tinyxml\tinyxml.h" />
     <ClInclude Include="..\interface\Tool.h" />
@@ -234,6 +287,53 @@
     <ClInclude Include="Window.h" />
     <ClInclude Include="Wire.h" />
     <ClInclude Include="wxImageLoader.h" />
+    <ClInclude Include="..\interface\Geom.h" />
+    <ClInclude Include="..\interface\HDialogs.h" />
+    <ClInclude Include="..\interface\HeeksObjDlg.h" />
+    <ClInclude Include="..\interface\IdNamedObj.h" />
+    <ClInclude Include="..\interface\IdNamedObjList.h" />
+    <ClInclude Include="..\interface\NiceTextCtrl.h" />
+    <ClInclude Include="CuboidDlg.h" />
+    <ClInclude Include="HArea.h" />
+    <ClInclude Include="HDxf.h" />
+    <ClInclude Include="HGear.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="Index.h" />
+    <ClInclude Include="propdev.h" />
+    <ClInclude Include="PropertyChange.h" />
+    <ClInclude Include="RemoveOrAddTool.h" />
+    <ClInclude Include="Sectioning.h" />
+    <ClInclude Include="SolidTools.h" />
+    <ClInclude Include="..\..\libarea\Arc.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\Area.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\AreaDxf.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\AreaOrderer.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\Box2D.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\Circle.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\clipper.hpp">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\Curve.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\Point.h">
+      <Filter>Area</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libarea\kurve\geometry.h">
+      <Filter>Area</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="HeeksCAD.rc" />

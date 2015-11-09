@@ -258,7 +258,7 @@
       <AdditionalIncludeDirectories>.\..\..\lib\vc_lib\msw;.\..\..\include;.;.\..\..\samples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV3d.lib;TKMesh.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;wxmsw28u_core.lib;wxmsw28u_aui.lib;wxmsw28u_gl.lib;wxbase28u.lib;area.lib;clipper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;TKVrml.lib;TKStl.lib;TKBRep.lib;TKIGES.lib;TKShHealing.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKXSBase.lib;TKShapeSchema.lib;FWOSPlugin.lib;PTKernel.lib;TKBool.lib;TKCAF.lib;TKCDF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKMath.lib;TKOffset.lib;TKPCAF.lib;TKPrim.lib;TKPShape.lib;TKService.lib;TKTopAlgo.lib;TKV3d.lib;TKMesh.lib;TKBO.lib;TKXDESTEP.lib;TKXCAF.lib;TKXCAFSchema.lib;TKDCAF.lib;TKLCAF.lib;TKPLCAF.lib;wxmsw28u_core.lib;wxmsw28u_aui.lib;wxmsw28u_gl.lib;wxbase28u.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\HeeksCAD.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_dll;$(CASROOT)\win32\vc12\lib;$(LIBAREAPATH)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -271,6 +271,48 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\libarea\Arc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Area.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaClipper.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaDxf.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaOrderer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\AreaPocket.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Circle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\clipper.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\Curve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Construction.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Finite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\kurve.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\Matrix.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libarea\kurve\offset.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="..\interface\DoubleInput.cpp" />
     <ClCompile Include="..\interface\Geom.cpp" />
     <ClCompile Include="..\interface\HDialogs.cpp" />
@@ -359,7 +401,10 @@
     <ClCompile Include="AutoSave.cpp" />
     <ClCompile Include="BezierCurve.cpp" />
     <ClCompile Include="Cone.cpp" />
-    <ClCompile Include="ConversionTools.cpp" />
+    <ClCompile Include="ConversionTools.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="CoordinateSystem.cpp" />
     <ClCompile Include="CorrelationTool.cpp" />
     <ClCompile Include="Cuboid.cpp" />
@@ -393,7 +438,10 @@
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="HAngularDimension.cpp" />
     <ClCompile Include="HArc.cpp" />
-    <ClCompile Include="HArea.cpp" />
+    <ClCompile Include="HArea.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="HCircle.cpp" />
     <ClCompile Include="HDimension.cpp" />
     <ClCompile Include="HDxf.cpp" />
@@ -491,6 +539,16 @@
     <ClCompile Include="wxImageLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\libarea\Arc.h" />
+    <ClInclude Include="..\..\libarea\Area.h" />
+    <ClInclude Include="..\..\libarea\AreaDxf.h" />
+    <ClInclude Include="..\..\libarea\AreaOrderer.h" />
+    <ClInclude Include="..\..\libarea\Box2D.h" />
+    <ClInclude Include="..\..\libarea\Circle.h" />
+    <ClInclude Include="..\..\libarea\clipper.hpp" />
+    <ClInclude Include="..\..\libarea\Curve.h" />
+    <ClInclude Include="..\..\libarea\kurve\geometry.h" />
+    <ClInclude Include="..\..\libarea\Point.h" />
     <ClInclude Include="..\interface\Box.h" />
     <ClInclude Include="..\interface\DoubleInput.h" />
     <ClInclude Include="..\interface\Geom.h" />

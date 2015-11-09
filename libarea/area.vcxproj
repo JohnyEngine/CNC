@@ -17,15 +17,15 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -70,9 +70,6 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
-    <Lib>
-      <OutputFile>$(SolutionDir)\lib\$(TargetName)d$(TargetExt)</OutputFile>
-    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -88,23 +85,23 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(PYTHON_LIB);%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)area.pyd</OutputFile>
-      <AdditionalLibraryDirectories>$(BOOST_PYTHON_PATH)/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(SolutionDir)/dll/area.pyd</OutputFile>
+      <AdditionalLibraryDirectories>$(BOOST_PYTHON_PATH)/lib/i386;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(SolutionDir)/dll/$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)/lib/$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
       <Command />
     </PostBuildEvent>
-    <Lib>
-      <OutputFile>$(SolutionDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
-    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arc.cpp" />
+    <ClCompile Include="Area.cpp" />
     <ClCompile Include="AreaBoolean.cpp" />
     <ClCompile Include="AreaDxf.cpp" />
     <ClCompile Include="AreaOrderer.cpp" />

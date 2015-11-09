@@ -2,6 +2,7 @@ Build
 *.sdf
 *.suo
 *.bak
+*.user
 HeeksCAD.exe
 *.opensdf
 Release
@@ -12,3 +13,4 @@ lib
 Unicode Release
 vc_msw
 vc_mswd
+dll
