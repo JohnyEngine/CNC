@@ -26,7 +26,7 @@ include_directories (
 
 add_executable(${PROJECT_NAME} WIN32 ${HEADER_FILES} ${SOURCE_FILES})
 
-#set_target_properties(${PROJECT_NAME}  PROPERTIES LINK_FLAGS "/SUBSYSTEM:CONSOLE")
+set_target_properties(${PROJECT_NAME}  PROPERTIES LINK_FLAGS "/SUBSYSTEM:CONSOLE")
 
 source_group(Header FILES ${HEADER_FILES})
 source_group(Source FILES ${SOURCE_FILES})

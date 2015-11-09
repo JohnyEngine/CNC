@@ -1,100 +1,86 @@
 #include "err.h"
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 extern char *itoa(int, char *, int);
-
-void myprintf(const char *fmt, va_list argp)
-{
-	const char *p;
-	int i;
-	char *s;
-	char fmtbuf[256];
-
-	va_start(argp, fmt);
-
-	for (p = fmt; *p != '\0'; p++)
-	{
-		if (*p != '%')
-		{
-			putchar(*p);
-			continue;
-		}
-
-		switch (*++p)
-		{
-		case 'c':
-			i = va_arg(argp, int);
-			putchar(i);
-			break;
-
-		case 'd':
-			i = va_arg(argp, int);
-			s = itoa(i, fmtbuf, 10);
-			fputs(s, stdout);
-			break;
-
-		case 's':
-			s = va_arg(argp, char *);
-			fputs(s, stdout);
-			break;
-
-		case 'x':
-			i = va_arg(argp, int);
-			s = itoa(i, fmtbuf, 16);
-			fputs(s, stdout);
-			break;
-
-		case '%':
-			putchar('%');
-			break;
-		}
-	}
-
-	va_end(argp);
-}
-
 
 void err(int eval, const char *fmt, ...)
 {
 	va_list args;
-	myprintf(fmt, args);
+
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void errx(int eval, const char *fmt, ...)
 {
 	va_list args;
-	myprintf(fmt, args);
+
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void warn(const char *fmt, ...)
 {
 	va_list args;
-	myprintf(fmt, args);
+
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void warnx(const char *fmt, ...)
 {
 	va_list args;
-	myprintf(fmt, args);
+
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void verr(int eval, const char *fmt, va_list args)
 {
-	myprintf(fmt, args);
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void verrx(int eval, const char *fmt, va_list args)
 {
-	myprintf(fmt, args);
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void vwarn(const char *fmt, va_list args)
 {
-	myprintf(fmt, args);
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
 
 void vwarnx(const char *fmt, va_list args)
 {
-	myprintf(fmt, args);
+	va_start(args, fmt);
+	vfprintf(stderr, fmt, args);
+	va_end(args);
+
+	abort();
 }
