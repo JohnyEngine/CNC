@@ -1,0 +1,3871 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-10 12:33+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: D:\GitHub\CNC\heekscad\src\AboutBox.cpp:17
+#: D:\GitHub\CNC\heekscad\interface\HDialogs.cpp:124
+msgid "OK"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:493
+msgid "Point Size"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:495
+msgid "Family"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:505
+msgid "Face Name"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:512
+msgid "Style"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:515
+#: D:\GitHub\CNC\heekscad\src\HSpline.cpp:248
+msgid "Weight"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:518
+msgid "Underlined"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:1312
+msgid "files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:1320
+#: D:\GitHub\CNC\heekscad\src\props.cpp:1509
+msgid "All files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\advprops.cpp:1572
+msgid "Make a selection:"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\AutoSave.cpp:34
+msgid "Do you want to recover using the automatic backup file?"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:173
+msgid "Stretched Cone"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:178
+msgid "r1"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:179
+msgid "r2"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:180
+#: D:\GitHub\CNC\heekscad\src\Cylinder.cpp:83
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:249
+msgid "height"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:214
+msgid "can not enter negative value for radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cone.cpp:221
+msgid "cone must not have both radiuses the same"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.cpp:400
+msgid "Cannot convert object type "
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.cpp:400
+msgid " to edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.cpp:409
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.cpp:468
+msgid "Error converting sketch to face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.cpp:473
+msgid "Fatal Error converting sketch to face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1259
+msgid "Set position and orientation by picking 3 points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1273
+msgid "Set this coordinate system as the active one"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1295
+msgid "Transform selected items to world coordinates"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1315
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1510
+#: D:\GitHub\CNC\heekscad\src\HPoint.cpp:116
+msgid "position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1316
+msgid "x axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1317
+msgid "y axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1319
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1512
+msgid "Vertical Angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1320
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1513
+msgid "Horizontal Angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1321
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1514
+msgid "Twist Angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1575
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1602
+msgid "Pick the location"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1577
+msgid "Pick a point on the x-axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.cpp:1579
+msgid "Pick a point where y > 0"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cuboid.cpp:98
+msgid "Stretched Cuboid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cuboid.cpp:103
+msgid "width ( x )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cuboid.cpp:104
+msgid "height( y )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cuboid.cpp:105
+msgid "depth ( z )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:19
+msgid "Position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:19
+msgid "X position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:19
+msgid "Y position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:19
+msgid "Z position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:20
+msgid "Size"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:20
+msgid "X width"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:20
+msgid "Y depth"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\CuboidDlg.cpp:20
+msgid "Z depth"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cylinder.cpp:77
+msgid "Stretched Cylinder"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cylinder.cpp:82
+msgid "diameter"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:54
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:348
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3303
+#: D:\GitHub\CNC\heekscad\src\HILine.cpp:108
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:210
+msgid "end"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:57
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3304
+msgid "intersection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:60
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3306
+msgid "midpoint"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:63
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:349
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:214
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3305
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:254
+#: D:\GitHub\CNC\heekscad\src\Sphere.cpp:84
+msgid "centre"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:66
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3310
+msgid "screen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:69
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3307
+msgid "nearest"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:72
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3308
+msgid "tangent"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:85
+msgid "Digitize Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:93
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:95
+msgid "Press Esc key to cancel"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:95
+msgid "Left button to accept position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:426
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:125
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:161
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:465
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:478
+msgid "X"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:427
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:126
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:162
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:466
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:479
+msgid "Y"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:428
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:127
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:163
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:467
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:480
+msgid "Z"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:438
+msgid "Offset (from last point)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:450
+msgid "Error! The 'Stop Picking' button shouldn't have been available!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:453
+msgid "Stop Picking"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DigitizeMode.cpp:455
+msgid "Finish picking"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:82
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:320
+msgid "between two points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:83
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:321
+msgid "between two points, XY only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:84
+msgid "between two points, X only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:85
+msgid "between two points, Y only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:86
+msgid "between two points, Z only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:87
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:322
+msgid "orthogonal"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.cpp:89
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:323
+msgid "mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:207
+msgid "Stop drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:209
+msgid "Finish drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:225
+msgid "Add point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:227
+msgid "Add a point to drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:242
+msgid "Get Position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:244
+msgid "Pick position without adding to the drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:296
+msgid "set_draw_step"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.cpp:315
+msgid "set_position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:152
+msgid "Blend edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:158
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:847
+msgid "Enter Blend Radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:158
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:847
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:150
+msgid "Radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:172
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1789
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:214
+msgid "Chamfer"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:178
+msgid "Enter Chamfer Distance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:178
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:863
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:290
+msgid "Distance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:192
+msgid "Make a sketch from edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:212
+msgid "Select Flat Linked Edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:268
+msgid "Solid with edge chamfer"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:275
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:729
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:740
+msgid "Solid with edge blend"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:282
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:746
+msgid "Error making fillet"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:286
+msgid "A fatal error happened during Chamfer"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:286
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:750
+msgid "A fatal error happened during Blend"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Edge.cpp:292
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:352
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:332
+msgid "length"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:200
+msgid "surface type"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:221
+msgid "Make Coordinate System"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:234
+msgid "Face Coordinate System"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:247
+msgid "Extrude Face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:261
+msgid "Rotate to Face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:419
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:613
+msgid "unknown"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:423
+msgid "plane"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:427
+msgid "cylinder"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:431
+msgid "cone"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:435
+msgid "sphere"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:439
+msgid "torus"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:443
+msgid "bezier"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:447
+msgid "bspline"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:451
+msgid "revolution"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:455
+msgid "extrusion"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:459
+msgid "offset"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.cpp:652
+msgid "Error in CFace::GetNurbSurfaceParams"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\FaceTools.cpp:67
+#: D:\GitHub\CNC\heekscad\src\FaceTools.cpp:72
+#: D:\GitHub\CNC\heekscad\src\FaceTools.cpp:77
+msgid "Error in GetFaceNormalAtUV"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:13
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4750
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:138
+#: D:\GitHub\CNC\heekscad\src\Group.h:24
+msgid "Group"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:236
+msgid "custom grippers"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:240
+msgid "custom grippers just one axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:243
+msgid "datum"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:245
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:209
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:241
+msgid "x"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:247
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:212
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:244
+msgid "y"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:249
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:217
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:247
+msgid "z"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:289
+msgid "Move datum"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:297
+msgid "Move px"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:302
+msgid "Move py"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Group.cpp:307
+msgid "Move pz"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:305
+msgid "string"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:306
+msgid "pythagorean"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:307
+msgid "horizontal"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:308
+msgid "vertical"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:309
+msgid "text mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.cpp:311
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:325
+msgid "scale"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:92
+msgid "Click centre point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:114
+msgid "Click first end point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:136
+msgid "Click second end point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:347
+#: D:\GitHub\CNC\heekscad\src\HILine.cpp:107
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:209
+msgid "start"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:350
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:215
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:255
+msgid "axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArc.cpp:353
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:216
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:711
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:504
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:505
+#: D:\GitHub\CNC\heekscad\src\Sphere.cpp:85
+msgid "radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:72
+msgid "Delete Curve"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:85
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:284
+msgid "Enter Offset Value, + for making bigger, - for making smaller"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:85
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:113
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:284
+msgid "Offset value"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:96
+msgid "Area offset error"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:100
+msgid "Offset Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:113
+msgid "Enter Offset Value"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:124
+msgid "Area thicken error"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:128
+msgid "Thicken Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:140
+msgid "Reorder Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:160
+msgid "Split Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.cpp:275
+msgid "number of curves"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:896
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:353
+msgid "Click midpoint"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:921
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:378
+msgid "Click centre-top point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:945
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:402
+msgid "Click centre-bottom point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:969
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:426
+msgid "Click centre-right point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HCircle.cpp:993
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:450
+msgid "Click centre-left point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:84
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:331
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3281
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:325
+msgid "mm"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:85
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3282
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:326
+msgid "inch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:317
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:305
+msgid "orientation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:329
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:322
+msgid "use view units"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:330
+msgid "inches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:332
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3285
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:329
+msgid "units"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HDimension.cpp:336
+msgid "dimension value"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1060
+msgid ""
+"OpenCascade failures occured during DXF read processing.  Would you like to "
+"import again and ignore the errors?"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1060
+msgid "DXF Read"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1074
+msgid "OpenCascade failure occured during DXF read processing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1082
+msgid "Select how the file is to be interpreted"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1083
+msgid "RS274X file interpretation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1087
+msgid "Produce trace isolation sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1088
+msgid "Produce trace centre-line sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1089
+msgid "Produce mirrored trace isolation sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1090
+msgid "Produce mirrored trace centre-line sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1185
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1854
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:110
+msgid "Open file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1197
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1273
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1803
+msgid "Invalid file type chosen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1197
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1273
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1803
+msgid "expecting"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1415
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1549
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1585
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1613
+msgid "couldn't open file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:1762
+msgid "Save graphical data file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2081
+msgid "Exit Full Screen Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2082
+msgid "Show Full Screen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2113
+msgid "Move here"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2113
+msgid "Copy here"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2147
+msgid "Set world coordinate system active"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2199
+msgid "Add points at intersections"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:2483
+msgid "Reverse Object"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3182
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:91
+msgid "view options"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3186
+msgid "stay upright"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3187
+msgid "free"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3188
+msgid "rotate mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3192
+msgid "none"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3193
+msgid "input mode title"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3194
+msgid "full help"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3195
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:91
+msgid "screen text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3197
+msgid "antialiasing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3198
+msgid "reverse mouse wheel"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3199
+msgid "reverse zooming mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3200
+msgid "Ctrl key does rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3201
+msgid "show datum"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3202
+msgid "datum is solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3203
+msgid "datum size"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3204
+msgid "datum size is pixels not mm"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3205
+msgid "show ruler"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3208
+msgid "single color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3209
+msgid "top color and bottom color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3210
+msgid "left color and right color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3211
+msgid "four corner colors"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3212
+msgid "sky and ground"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3213
+msgid "background mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3218
+msgid "background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3222
+msgid "top background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3223
+msgid "bottom background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3227
+msgid "left background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3228
+msgid "right background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3232
+msgid "top left background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3233
+msgid "bottom left background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3234
+msgid "top right background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3235
+msgid "bottom right background color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3239
+msgid "sky top color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3240
+msgid "sky middle color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3241
+msgid "sky bottom color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3242
+msgid "ground top color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3243
+msgid "ground middle color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3244
+msgid "ground bottom color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3250
+msgid "no grid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3251
+msgid "faint color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3252
+msgid "alpha blending"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3253
+msgid "colored alpha blending"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3254
+msgid "grid mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3256
+msgid "face selection color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3257
+msgid "perspective"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3276
+msgid "tool icon size"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3287
+msgid "flat on screen dimension text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3290
+msgid "faces and edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3291
+msgid "edges only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3292
+msgid "faces only"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3293
+msgid "solid view mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3295
+msgid "input uses modal dialog"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3296
+msgid "dragging moves objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3297
+msgid "highlight items under mouse"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3298
+msgid "highlight color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3302
+msgid "digitizing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3309
+msgid "coordinates"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3311
+msgid "grid size"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3312
+msgid "snap to grid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3315
+msgid "correlation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3316
+msgid ""
+"Minimum correlation factor (0.0 (nothing like it) -> 1.0 (perfect match))"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3317
+msgid ""
+"Maximum scale threshold (1.0 - must be same size, 1.5 (can be half as big "
+"again or 2/3 size)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3318
+msgid "Number of sample points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3319
+msgid "Correlate by color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3322
+msgid "drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3323
+msgid "current color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3324
+msgid "geometry tolerance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3325
+msgid "sketch reorder tolerance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3326
+msgid "face to sketch deviaton"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3327
+msgid "Use old solid fuse ( to prevent coplanar faces )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3328
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:254
+msgid "Extrude makes a solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3329
+msgid "Solid revolution angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3340
+msgid "selection filter"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3341
+msgid "point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3342
+msgid "line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3343
+msgid "arc"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3344
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:690
+msgid "infinite line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3345
+msgid "circle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3346
+msgid "edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3347
+msgid "face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3348
+msgid "vertex"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3349
+msgid "solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3350
+msgid "stl_solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3351
+msgid "wire"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3352
+msgid "sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3353
+msgid "image"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3354
+msgid "coordinate system"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3355
+msgid "text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3356
+msgid "dimension"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3357
+msgid "ruler"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3358
+msgid "pad"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3359
+msgid "part"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3360
+msgid "pocket"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3363
+msgid "file options"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3364
+msgid "DXF"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3365
+msgid "make sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3366
+msgid "ignore errors where possible"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3367
+msgid "read points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3368
+msgid "Layer Name Suffixes To Discard"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3371
+msgid "STL"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3372
+msgid "stl save facet tolerance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3373
+msgid "STL save binary"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3375
+msgid "auto save interval (in minutes)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3380
+msgid "font options"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3381
+msgid "Paths (semicolon delimited)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3382
+msgid "Word Space Percentage"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3383
+msgid "Character Space Percentage"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3421
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+msgid "Heeks files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+msgid "Known Files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "IGES files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "STEP files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "STL files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+msgid "Scalar Vector Graphics files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+msgid "DXF files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+msgid "RS274X/Gerber files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3450
+msgid "Picture files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "CPP files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3455
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "OpenCAMLib python files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3502
+msgid "Deselect"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3505
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3509
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:134
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:124
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:128
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:464
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:477
+msgid "Select"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3506
+msgid "Add to selection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3553
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:148
+msgid "Edit"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3635
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4726
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.h:123
+msgid "Unknown"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:3995
+msgid "Would you like to save changes?"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4021
+msgid "Untitled"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4727
+msgid "Document"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4728
+#: D:\GitHub\CNC\heekscad\src\HPoint.h:30
+msgid "Point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4729
+#: D:\GitHub\CNC\heekscad\src\HLine.h:23
+msgid "Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4730
+#: D:\GitHub\CNC\heekscad\src\HArc.h:33
+msgid "Arc"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4731
+msgid "ILine"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4732
+#: D:\GitHub\CNC\heekscad\src\HCircle.h:30
+msgid "Circle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4733
+#: D:\GitHub\CNC\heekscad\src\Gripper.h:23
+msgid "Gripper"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4734
+#: D:\GitHub\CNC\heekscad\src\Vertex.h:33
+msgid "Vertex"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4735
+#: D:\GitHub\CNC\heekscad\src\Edge.h:54
+msgid "Edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4736
+#: D:\GitHub\CNC\heekscad\src\Face.h:44
+msgid "Face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4737
+msgid "Loop"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4738
+#: D:\GitHub\CNC\heekscad\src\Solid.h:26
+#: D:\GitHub\CNC\heekscad\interface\HeeksCADInterface.cpp:2038
+msgid "Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4739
+msgid "StlSolid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4740
+#: D:\GitHub\CNC\heekscad\src\Wire.h:14
+msgid "Wire"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4741
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:43
+#: D:\GitHub\CNC\heekscad\src\Sketch.h:36
+msgid "Sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4742
+#: D:\GitHub\CNC\heekscad\src\HImage.h:42
+msgid "Image"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4743
+msgid "CoordinateSystem"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4744
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:164
+#: D:\GitHub\CNC\heekscad\src\HText.h:44
+msgid "Text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4745
+#: D:\GitHub\CNC\heekscad\src\HAngularDimension.h:46
+#: D:\GitHub\CNC\heekscad\src\HDimension.h:54
+msgid "Dimension"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4746
+#: D:\GitHub\CNC\heekscad\src\Ruler.h:50
+msgid "Ruler"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4747
+#: D:\GitHub\CNC\heekscad\src\HXml.h:18
+msgid "Xml"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4748
+#: D:\GitHub\CNC\heekscad\src\HEllipse.h:40
+msgid "Ellipse"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4749
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:159
+#: D:\GitHub\CNC\heekscad\src\HSpline.h:42
+msgid "Spline"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4751
+msgid "CorrelationTool"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4752
+msgid "AngularDimension"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4753
+msgid "OrientationModifier"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4754
+msgid "Hole"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4755
+msgid "Positions"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksCAD.cpp:4756
+msgid "ObjectMaximum"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:140
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2032
+msgid "Graphics"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:143
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1807
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2033
+msgid "Objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:144
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1808
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2034
+msgid "Options"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:145
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1809
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2035
+msgid "Input"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:146
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1810
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2036
+msgid "Properties"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:198
+msgid "Reset Layout"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:199
+msgid "Set toolbars to left"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:516
+msgid "Pick three or more points to be splined"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:516
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1737
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1899
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:159
+msgid "Spline Through Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:643
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:666
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:166
+#: D:\GitHub\CNC\heekscad\src\CoordinateSystem.h:32
+#: D:\GitHub\CNC\heekscad\interface\HeeksCADInterface.cpp:544
+msgid "Coordinate System"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:708
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:111
+msgid "Import file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:738
+msgid "You must restart the application for the settings to be changed"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:818
+msgid ""
+"Pick two or more faces or solids, the first one will be cut by the others"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:818
+msgid "Subtract Solids"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:826
+msgid "Pick two or more solids to be fused together"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:826
+msgid "Fuse Solids"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:834
+msgid ""
+"Pick two or more solids, only the shape that is contained by all of them "
+"will remain"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:834
+msgid "Intersection of Solids"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:843
+msgid "Pick one or more edges to add a fillet to"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:843
+msgid "Edge Fillet"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:859
+msgid "Pick one or more edges to add a chamfer to"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:859
+msgid "Edge Chamfer"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:863
+msgid "Enter chamfer distance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:880
+msgid "Pick two or more sketches, to create a lofted solid between"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:880
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:888
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:896
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:904
+msgid "hold down Ctrl key to select more than one solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:880
+msgid "Lofted Body"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:888
+msgid ""
+"Pick one or more sketches, faces or circles, to create an extruded body from"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:888
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:896
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:904
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:199
+msgid "Extrude"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:896
+msgid ""
+"Pick one or more sketches, faces or circles, to create a revolved body from"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:904
+msgid "Pick one or more sketches, faces or circles, to sweep"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1494
+msgid "Edit snap grid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1494
+msgid "snap grid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1590
+msgid ""
+"There was a problem printing.\n"
+"Perhaps your current printer is not set correctly?"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1590
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1592
+msgid "Printing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1592
+msgid "You canceled printing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1611
+msgid ""
+"There was a problem previewing.\n"
+"Perhaps your current printer is not set correctly?"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1611
+msgid "Previewing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1615
+msgid "Demo Print Preview"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1692
+msgid "New\tCtrl+N"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1693
+msgid "Open...\tCtrl+O"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1696
+msgid "Open Recent"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1698
+msgid "Save\tCtrl+S"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1699
+msgid "Save As..."
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1701
+msgid "Import..."
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1703
+msgid "Print...\tCtrl+P"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1704
+msgid "Page Setup..."
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1705
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:124
+msgid "Print Preview"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1707
+msgid "Plugins..."
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1711
+msgid "Restore All Defaults"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1713
+msgid "Exit\tCtrl+Q"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1717
+msgid "Undo\tCtrl+Z"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1718
+msgid "Redo\tCtrl+Shift+Z"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1720
+msgid "Cut\tCtrl+X"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1721
+msgid "Copy\tCtrl+C"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1722
+msgid "Paste\tCtrl+V"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1723
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:149
+msgid "Delete"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1725
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1867
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:134
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:65
+msgid "Select Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1729
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1878
+msgid "Draw a sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1730
+msgid "Draw Rectangles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1731
+msgid "Draw Obrounds"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1732
+msgid "Draw Polygons"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1733
+msgid "Draw Ellipses"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1734
+msgid "Draw Infinite Lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1735
+msgid "Draw Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1739
+msgid "Add Text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1740
+msgid "Add Dimension"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1741
+msgid "Add Gear"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1746
+msgid "Pick 3 points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1748
+msgid "Pick 1 point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1752
+msgid "Previous view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1754
+msgid "Zoom window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1755
+msgid "Fit view to extents"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1756
+msgid "Fit view to extents, but no rotation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1757
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1993
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:228
+msgid "View XY Front"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1758
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1994
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:229
+msgid "View XY Back"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1759
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1995
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:230
+msgid "View XZ Top"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1760
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1996
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:231
+msgid "View XZ Bottom"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1761
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1997
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:232
+msgid "View YZ Right"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1762
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1998
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:233
+msgid "View YZ Left"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1763
+msgid "View XZY Isometric"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1765
+msgid "View rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1766
+msgid "View zoom"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1767
+msgid "View pan"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1768
+msgid "Full screen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1770
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2011
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:242
+msgid "Redraw"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1774
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1943
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:190
+msgid "Add a sphere"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1775
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1944
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:191
+msgid "Add a cube"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1776
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1945
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:192
+msgid "Add a cylinder"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1777
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1946
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:193
+msgid "Add a cone"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1779
+msgid "Loft two sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1780
+msgid "Extrude a sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1781
+msgid "Revolve a sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1782
+msgid "Sweep objects along a sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1784
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:129
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:206
+msgid "Cut"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1785
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:207
+msgid "Fuse"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1786
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:208
+msgid "Common"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1788
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:213
+msgid "Fillet"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1790
+msgid "Sectioning"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1794
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:171
+msgid "Move Translate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1795
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:172
+msgid "Copy Translate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1797
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:173
+msgid "Move Rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1798
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:174
+msgid "Copy Rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1800
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:175
+msgid "Move Mirror"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1801
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:176
+msgid "Copy Mirror"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1803
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:177
+msgid "Move Scale"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1812
+msgid "Standard Tool Bar"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1813
+msgid "Solids Tool Bar"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1814
+msgid "Geometry Tool Bar"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1815
+msgid "Viewing Tool Bar"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1819
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:116
+msgid "About"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1823
+msgid "&File"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1824
+msgid "&Edit"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1825
+msgid "&View"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1826
+msgid "&Geometry"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1827
+msgid "&Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1828
+msgid "&Set Origin"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1829
+msgid "&Transform"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1830
+msgid "&Window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1831
+msgid "&Help"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1853
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:109
+msgid "New file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1855
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:112
+msgid "Save file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1859
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:129
+msgid "Cut selected items to the clipboard"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1860
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:130
+msgid "Copy selected items to the clipboard"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1861
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:131
+msgid "Paste items from the clipboard"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1864
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:132
+msgid "Undo the previous command"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1865
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:133
+msgid "Redo the next command"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1870
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2037
+msgid "General Tools"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1879
+msgid "Start drawing rectangles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1880
+msgid "Start drawing obrounds"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1881
+msgid "Start drawing polygons"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1882
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:143
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:152
+msgid "Add a gear"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1888
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:148
+msgid "Draw circles through 3 points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1889
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:149
+msgid "Draw circles, centre and point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1890
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:150
+msgid "Draw circles, centre and radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1891
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:151
+msgid "Draw ellipses"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1897
+msgid "Start Drawing Infinite Lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1898
+msgid "Start Drawing Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1905
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:164
+msgid "Add a text object"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1906
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:165
+msgid "Add a dimension"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1907
+msgid "Add Coordinate System"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1913
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:171
+msgid "Translate selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1914
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:172
+msgid "Copy and translate selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1915
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:173
+msgid "Rotate selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1916
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:174
+msgid "Copy and rotate selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1917
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:175
+msgid "Mirror selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1918
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:176
+msgid "Copy and mirror selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1919
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:177
+msgid "Scale selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1925
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:182
+msgid "End point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1926
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:183
+msgid "Intersection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1927
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:184
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:120
+msgid "Centre"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1928
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:185
+msgid "Midpoint"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1929
+msgid "Snap"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1930
+msgid "edit grid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1935
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2038
+msgid "Geometry Tools"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1952
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:198
+msgid "Create a lofted face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1953
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:199
+msgid "Extrude a wire or face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1954
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:200
+msgid "Revolve a wire or face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1955
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:201
+msgid "Sweep a wire or face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1961
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:206
+msgid "Cut one solid from another"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1962
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:207
+msgid "Fuse one solid to another"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1963
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:208
+msgid "Find common solid between two solids"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1969
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:213
+msgid "Make a fillet on selected edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1970
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:214
+msgid "Make a chamfer on selected edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1975
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2039
+msgid "Solid Tools"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1983
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:219
+msgid "Zoom in to fit the extents of the drawing into the graphics window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1984
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:220
+msgid ""
+"Zoom in to fit the extents of the drawing into the graphics window, but "
+"without rotating the view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1985
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:221
+msgid "Zoom in to a dragged window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1986
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:222
+msgid "Go back to previous view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1987
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:223
+msgid "Switch to full screen view ( press escape to return )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:1999
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:234
+msgid "View XY Isometric"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2005
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:239
+msgid "Enter view rotating mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2006
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:240
+msgid "Drag to zoom in and out"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2007
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:241
+msgid "Drag to move view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2014
+#: D:\GitHub\CNC\heekscad\src\HeeksFrame.cpp:2040
+msgid "Viewing Tools"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:109
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:147
+msgid "New"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:110
+msgid "Open"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:111
+msgid "Import"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:112
+msgid "Save"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:113
+msgid "Save As"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:113
+msgid "Save file with given name"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:114
+msgid "Plugins"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:114
+msgid "Edit plugins"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:115
+msgid "Restore Defaults"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:115
+msgid "Restore all defaults"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:116
+msgid "Software Information"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:122
+msgid "Print"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:122
+msgid "Print the view to a printer"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:123
+msgid "Page Setup"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:123
+msgid "Setup the printer layout"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:124
+msgid "Show a preview of the print view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:130
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:309
+msgid "Copy"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:131
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:326
+msgid "Paste"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:132
+msgid "Undo"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:133
+msgid "Redo"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:139
+msgid "Lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:139
+msgid "Draw a sketch with lines and arcs"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:140
+msgid "Rectangles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:140
+msgid "Draw rectangles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:141
+msgid "Obrounds"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:141
+msgid "Draw obrounds"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:142
+msgid "Polygons"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:142
+msgid "Draw polygons"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:143
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:152
+#: D:\GitHub\CNC\heekscad\src\HGear.h:34
+msgid "Gear"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:148
+msgid "3 Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:149
+msgid "2 Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:151
+msgid "Ellipses"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:157
+#: D:\GitHub\CNC\heekscad\src\HILine.h:22
+msgid "Infinite Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:157
+msgid "Drawing Infinite Lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:158
+msgid "Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:158
+msgid "Drawing Points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:165
+msgid "Dimensioning"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:166
+msgid "Add a coordinate system"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:182
+msgid "Endof"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:183
+msgid "Inters"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:190
+#: D:\GitHub\CNC\heekscad\src\Sphere.h:25
+msgid "Sphere"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:191
+msgid "Cube"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:192
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:46
+#: D:\GitHub\CNC\heekscad\src\Cylinder.h:25
+msgid "Cylinder"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:193
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:60 D:\GitHub\CNC\heekscad\src\Cone.h:29
+msgid "Cone"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:198
+msgid "Ruled"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:200
+msgid "Revolve"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:201
+msgid "Sweep"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:219
+msgid "Mag Extents"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:220
+msgid "Mag No Rotation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:221
+msgid "Zoom Window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:222
+msgid "View Back"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:223
+msgid "FullScreen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:239
+#: D:\GitHub\CNC\heekscad\src\ViewRotating.h:15
+msgid "View Rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:240
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.h:14
+msgid "View Zoom"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HeeksRibbon.cpp:241
+#: D:\GitHub\CNC\heekscad\src\ViewPanning.h:12
+msgid "View Pan"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:256
+msgid "major radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:257
+msgid "minor radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:258
+msgid "rotation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:259
+msgid "start angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HEllipse.cpp:260
+msgid "end angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:549
+msgid "num teeth"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:550
+msgid "module"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:551
+msgid "pressure angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:552
+msgid "tip relief"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:553
+msgid "depth"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:554
+msgid "cone half angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:555
+msgid "drawn angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:623
+msgid "Make Sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HGear.cpp:632
+msgid "Make One Tooth Sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HILine.cpp:110
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:212
+msgid "Length"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HImage.cpp:155
+msgid "Picture - "
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:51
+msgid "Make Cylinder On Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:65
+msgid "Make Cone On Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:83
+msgid "Click Midpoint On Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:99
+msgid "Click Start Of Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HLine.cpp:115
+msgid "Click End Of Line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HSpline.cpp:235
+msgid "Knot"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HSpline.cpp:246
+msgid "Pole"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:317
+msgid "OpenGL (default) font"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:329
+msgid "Font"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:334
+msgid "left"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:335
+msgid "center"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:336
+msgid "right"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:337
+msgid "horizontal justification"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:341
+msgid "baseline"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:342
+msgid "bottom"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:343
+msgid "middle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:344
+msgid "top"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:345
+msgid "vertical justification"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:463
+msgid "Only a single orientation modifier is supported"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:496
+msgid "Make a Sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:498
+msgid "Convert the lines and arcs that make up this text into a sketch object."
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:512
+msgid "Add Orientation Modifier"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HText.cpp:514
+msgid "Add graphics to orient text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:109
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:458
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:293
+msgid "number of copies"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:123
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:124
+msgid "Position to rotate about"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:160
+msgid "Axis to rotate about"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:164
+msgid "Select a line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:185
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:324
+msgid "angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:190
+msgid "axial shift"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:349
+msgid "Pick Position"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:382
+msgid "Pick line for rotation axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:464
+msgid "Position to move from"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:477
+msgid "Position to move to"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:557
+msgid "Pick position to move from"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Input.cpp:561
+msgid "Pick position to move to"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\InputModeCanvas.cpp:77
+msgid "Input Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:65
+msgid "set previous direction"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:501
+msgid "Line drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:503
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:510
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:547
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:555
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:562
+msgid "click on start point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:504
+msgid "click on end of line"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:508
+msgid "Arc drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:511
+msgid "click on end of arc"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:515
+msgid "Infinite line drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:517
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:589
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:598
+msgid "click on first point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:518
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:590
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:599
+msgid "click on second point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:522
+msgid "Ellipse drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:525
+msgid "center and 2 points mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:527
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:581
+msgid "click on center point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:530
+msgid "click on point on ellipse"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:532
+msgid "(colinear or orthogonal to axis)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:534
+msgid "click on another point on ellipse"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:540
+msgid "Spline drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:545
+msgid "cubic spline mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:548
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:556
+msgid "click on end point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:549
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:563
+msgid "click on first control point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:550
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:564
+msgid "click on second control point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:553
+msgid "quartic spline mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:557
+msgid "click on control point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:560
+msgid "rational spline mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:565
+msgid "click on next control point or endpoint"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:573
+msgid "Circle drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:579
+msgid "center and point mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:582
+msgid "click on point on circle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:587
+msgid "three points mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:591
+msgid "click on third point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:596
+msgid "two points mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:604
+msgid "centre with radius mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:606
+msgid "click on centre point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:688
+msgid "draw lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:689
+msgid "draw tangential arcs"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:691
+msgid "draw circles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:692
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:501
+msgid "drawing mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:699
+msgid "(press 'a' for arcs)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:706
+msgid "centre and point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:707
+msgid "three points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:708
+msgid "two points"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:709
+msgid "centre and radius"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\LineArcDrawing.cpp:710
+msgid "circle mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1293
+msgid "Categorized Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1294
+msgid "Alphabetic Mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1339
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1737
+msgid "<< Compact"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1339
+#: D:\GitHub\CNC\heekscad\src\manager.cpp:1732
+msgid "Expand >>"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:300
+msgid "Delete Marked Items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:311
+msgid "Copies the selected items to the clipboard"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:326
+msgid "Paste Into"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MarkedList.cpp:328
+msgid "Paste items from the clipboard to the drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:104
+msgid "Normally spaced"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:106
+msgid "Spacing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:109
+msgid "Number of Rotations (negative for reverse direction)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:110
+msgid "Sketch rotates text"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:119
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:125
+msgid "Left"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:121
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:126
+msgid "Right"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:127
+msgid "Top"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:128
+msgid "Bottom"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\OrientationModifier.cpp:131
+msgid "Justification"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:39
+msgid "Name"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:43
+msgid "File Path"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:84
+msgid "Plugin must have a name!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:92
+msgid "No file specified!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:115
+msgid "shared library files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:117
+msgid "Choose shared library file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:137
+msgid "HeeksCAD plugin libraries"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:342
+#: D:\GitHub\CNC\heekscad\src\Plugins.cpp:357
+msgid "Add New Plugin"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:250
+msgid "vertical angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:253
+msgid "horizontal angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.cpp:256
+msgid "twist angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\propgrid.cpp:635
+#: D:\GitHub\CNC\heekscad\src\props.cpp:569
+msgid "False"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\propgrid.cpp:636
+#: D:\GitHub\CNC\heekscad\src\props.cpp:570
+msgid "True"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\propgrid.cpp:637
+#: D:\GitHub\CNC\heekscad\src\props.cpp:571
+msgid "Unspecified"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:480
+msgid "is not a floating-point number"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:581
+#: D:\GitHub\CNC\heekscad\src\props.cpp:602
+msgid "true"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:582
+msgid "false"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:1470
+msgid "Choose a directory:"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:1685
+msgid "Choose a file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:1851
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2083
+msgid "Ok"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:1853
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2085
+#: D:\GitHub\CNC\heekscad\interface\DoubleInput.cpp:29
+#: D:\GitHub\CNC\heekscad\interface\HDialogs.cpp:126
+msgid "Cancel"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2029
+msgid "Add"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2057
+msgid "Update"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2060
+#: D:\GitHub\CNC\heekscad\src\RemoveOrAddTool.h:40
+msgid "Remove"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2063
+msgid "Up"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\props.cpp:2066
+msgid "Down"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:481
+msgid "Rectangle drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:484
+msgid "Polygon drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:487
+msgid "Obround drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:490
+msgid "Regular shapes drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:497
+msgid "draw rectangles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:498
+msgid "draw polygons"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:499
+msgid "draw slots"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:508
+msgid "number of sides for polygon"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:511
+msgid "excribed circle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:512
+msgid "inscribed circle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RegularShapesDrawing.cpp:513
+msgid "polygon mode"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RemoveOrAddTool.cpp:28
+msgid "Add "
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RemoveOrAddTool.cpp:150
+msgid "Add Objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RemoveOrAddTool.cpp:165
+msgid "Remove Objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:22
+msgid "pick some sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:52
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:235
+msgid "Ruled Surface"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:113
+msgid "Revolved Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:113
+msgid "Extruded Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:144
+msgid "Pipe"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:149
+msgid "Error making pipe"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:199
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:286
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:352
+msgid "pick sketches, faces or circles"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:204
+msgid "Pick a Sketch to sweep along"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:244
+msgid "Make extrusion"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:264
+msgid "taper outward angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:319
+msgid "Input revolution angle"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:329
+msgid "Makes a solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:391
+msgid "Error making ruled solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:396
+msgid "Fatal error making ruled solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:449
+msgid "Error making extruded solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:453
+msgid "Fatal error making extruded solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:480
+msgid "Error making revolved solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\RuledSurface.cpp:484
+msgid "Fatal error making revolved solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:280
+msgid "ResetRuler"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:282
+msgid "Reset the ruler"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:331
+msgid "width"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Ruler.cpp:333
+msgid "empty_length"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:57
+msgid "Points must not be the same!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:446
+msgid "Sectioned Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:454
+msgid "Sectioning failed!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:468
+msgid "Pick point on axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:476
+msgid "Pick secondary point on axis"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sectioning.cpp:485
+msgid "Pick objects to section"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:72
+msgid "Left button for selecting objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:73
+msgid "( with Ctrl key for extra objects)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:74
+msgid "( with Shift key for similar objects)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:75
+msgid "Drag with left button to window select"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:77
+msgid "or to move object if on an object"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:78
+msgid "Mouse wheel to zoom in and out"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:81
+msgid "Middle button to pan view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:82
+msgid "( with Ctrl key to rotate view )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:85
+msgid "Middle button to rotate view"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:86
+msgid "( with Ctrl key to pan view )"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:89
+msgid "Right button for object menu"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:90
+msgid "See options window to hide this help"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:96
+msgid "Press Return key to accept selection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:648
+msgid "Accept selection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:667
+msgid "Cancel selection"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:679
+msgid "Pick Anything"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:681
+msgid "Set the selection filter to all items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:692
+msgid "Pick Edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:694
+msgid "Set the selection filter to only edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:705
+msgid "Pick Faces"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SelectMode.cpp:707
+msgid "Set the selection filter to only faces"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:296
+msgid "Result of 'Offset Shape'"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:303
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:307
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:60
+msgid "Error making offset"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:307
+msgid "Offset Shape"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:327
+msgid "Stretched Shape"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:415
+msgid "Error with cut operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:428
+msgid "Result of Fuse Operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:436
+msgid "Error with fuse operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:453
+msgid "Result of Common Operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:461
+msgid "Error with common operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:619
+msgid "Result of Cut Operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:805
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:816
+msgid "STEP solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:824
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:928
+msgid "STEP import not done!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:876
+msgid "sewed IGES solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:882
+msgid "sewed IGES shape"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:898
+msgid "IGES shape"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:906
+msgid "IGES import not done!"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:924
+msgid "BREP solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:1134
+msgid "opacity"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:1140
+msgid "volume"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:1143
+msgid "centre of gravity"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Shape.cpp:1147
+msgid "calculate volume"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:85
+msgid "Reorder Object"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:167
+msgid "Number of elements"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:186
+msgid "order"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:202
+msgid "Split Sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:225
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:94
+msgid "Convert sketch to face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:249
+msgid "Convert sketch to wire"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:288
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:295
+msgid "Use negative for smaller and Positive for larger)"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:289
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:295
+msgid "Enter the distance"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:311
+msgid "Copy Parallel"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sketch.cpp:329
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:36
+msgid "Split arcs to little lines"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "Save solid file"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:57
+msgid "Solid Files"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SolidTools.cpp:83
+msgid "Invalid solid file type chosen"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Sphere.cpp:78
+msgid "Ellipsoid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTool.cpp:21
+msgid "Transform"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTool.cpp:46
+msgid "Transform Objects"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:35
+msgid "Pick objects to move"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:118
+msgid "Pick objects to rotate"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:212
+msgid "Pick objects to mirror"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:231
+msgid "Pick line to mirror about"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:278
+msgid "Pick objects to scale"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:293
+msgid "Enter number of copies"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:303
+msgid "Click centre position to scale about"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:308
+msgid "Enter scale factor"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\TransformTools.cpp:308
+msgid "scale factor"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewPanning.cpp:44
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.cpp:50
+msgid "Drag with the left mouse button"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewPanning.cpp:55
+msgid "Stop panning"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewRotating.cpp:60
+msgid "Stop rotating"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.cpp:50
+msgid "Forward to zoom in, Back to zoom out"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.cpp:50
+msgid "Back to zoom in, Forward to zoom out"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.cpp:50
+msgid "Hold middle mouse button down to pan"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ViewZooming.cpp:61
+msgid "Stop zooming"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:35
+msgid "Generated"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:44
+msgid "Generated from edge"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:50
+msgid "Modified"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:53
+msgid "Is Deleted"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Wire.cpp:65
+msgid "Offset Wire"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\wxImageLoader.cpp:22
+msgid "Failed to load resource image from "
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:28
+msgid "Convert areas to sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:44
+msgid "Convert to Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:52
+msgid "Unite Areas"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:61
+msgid "Cut Areas"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:70
+msgid "Intersect Areas"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:78
+msgid "Xor Areas"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:86
+msgid "Inside Curves"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:102
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:111
+msgid "Make To Sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:104
+msgid "Make selected objects into a new sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:113
+msgid "Make selected edges into a new sketch"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:120
+msgid "Combine sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:122
+msgid "Combine selected sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:129
+msgid "Unite sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:131
+msgid "Unite selected sketches"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:140
+msgid "Group selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:147
+msgid "Ungroup"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:149
+msgid "Ungroup selected items"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:159
+msgid "Transform to Coordinate System"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ConversionTools.h:161
+msgid "Transform selected items using two coordinate systems"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Cuboid.h:28
+msgid "Cuboid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\DimensionDrawing.h:26
+msgid "Dimension drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Drawing.h:73
+msgid "Drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Face.h:85
+msgid "Make a sketch from face"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\HArea.h:35
+msgid "Area"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MagDragWindow.h:20
+msgid "Magnifying by dragging a window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\MenuSeparator.h:13
+msgid "MenuSeparator"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PointDrawing.h:22
+msgid "Point drawing"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PointOrWindow.h:26
+msgid "Dragging a window or picking a point"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertiesCanvas.h:23
+msgid "Change Property"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:15
+msgid "Property Change String"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:32
+msgid "Property Change Double"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:49
+msgid "Property Change Length"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:66
+msgid "Property Change Int"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:83
+msgid "Property Change Color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:100
+msgid "Property Change Vertex"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:117
+msgid "Property Change Trsf"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:134
+msgid "Property Change Choice"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\PropertyChange.h:151
+msgid "Property Change Check"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ShapeTools.h:12
+msgid "Faces"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ShapeTools.h:21
+msgid "Edges"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\ShapeTools.h:30
+msgid "Vertices"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\SolidTools.h:15
+msgid "Save Solids"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\StlSolid.h:41
+msgid "STL Solid"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\src\Window.h:19
+msgid "Dragging a window"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\DoubleInput.cpp:19
+msgid "Apply"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\DoubleInput.cpp:21
+msgid "Accept value and continue"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\DoubleInput.cpp:31
+msgid "Cancel operation"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HDialogs.cpp:42
+#: D:\GitHub\CNC\heekscad\interface\HDialogs.cpp:43
+msgid "None"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HDialogs.cpp:128
+msgid "Help"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksCADInterface.cpp:2036
+msgid "Geometry"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksCADInterface.cpp:2040
+msgid "Set Origin"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.cpp:112
+msgid "object type"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.cpp:113
+msgid "object title"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.cpp:114
+msgid "ID"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.cpp:118
+msgid "color"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\HeeksObj.cpp:120
+msgid "visible"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\ObjList.h:79
+msgid "Reorder"
+msgstr ""
+
+#: D:\GitHub\CNC\heekscad\interface\Property.h:40
+msgid "Unknown Property"
+msgstr ""
