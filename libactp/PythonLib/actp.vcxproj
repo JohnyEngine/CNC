@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B852210F-F60F-4212-A8C8-A36886C5E942}</ProjectGuid>
+    <RootNamespace>actp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Python25\include;.\;..\freesteel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;ACTP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>./actp.pyd</OutputFile>
+      <AdditionalLibraryDirectories>C:\Python25\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(PYTHON_INCLUDE);.\;..\freesteel\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;ACTP_EXPORTS;OPEN_SOURCE_GEOMETRY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>./actp.pyd</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>$(PYTHON_LIB);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\freesteel\src\bolts\bolts.h" />
+    <ClInclude Include="..\freesteel\src\bolts\debugfuncs.h" />
+    <ClInclude Include="..\freesteel\src\bolts\I1.h" />
+    <ClInclude Include="..\freesteel\src\bolts\P2.h" />
+    <ClInclude Include="..\freesteel\src\bolts\P3.h" />
+    <ClInclude Include="..\freesteel\src\bolts\Partition1.h" />
+    <ClInclude Include="..\freesteel\src\bolts\S1.h" />
+    <ClInclude Include="..\freesteel\src\bolts\smallfuncs.h" />
+    <ClInclude Include="..\freesteel\src\bolts\vo.h" />
+    <ClInclude Include="..\freesteel\src\cages\Area2_gen.h" />
+    <ClInclude Include="..\freesteel\src\cages\cages.h" />
+    <ClInclude Include="..\freesteel\src\cages\PathX.h" />
+    <ClInclude Include="..\freesteel\src\cages\pathxseries.h" />
+    <ClInclude Include="..\freesteel\src\cages\S2weave.h" />
+    <ClInclude Include="..\freesteel\src\cages\SurfX.h" />
+    <ClInclude Include="..\freesteel\src\cages\SurfXboxed.h" />
+    <ClInclude Include="..\freesteel\src\pits\CircCrossingStructure.h" />
+    <ClInclude Include="..\freesteel\src\pits\CoreRoughGeneration.h" />
+    <ClInclude Include="..\freesteel\src\pits\pits.h" />
+    <ClInclude Include="..\freesteel\src\pits\S2weaveCell.h" />
+    <ClInclude Include="..\freesteel\src\pits\S2weaveCellLinearCut.h" />
+    <ClInclude Include="..\freesteel\src\pits\SLi_gen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\freesteel\src\bolts\Partition1.cpp" />
+    <ClCompile Include="..\freesteel\src\bolts\S1.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\PathX.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\PathXboxed.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\S1stockcircle.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\S2weave.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\SurfX.cpp" />
+    <ClCompile Include="..\freesteel\src\cages\SurfXboxed.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\CoreRoughGeneration.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\NormRay_gen.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCell.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCellLinearCut.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCellLinearCutTraverse.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCircle.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\SLi_gen.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\SurfXbuildcomponents.cpp" />
+    <ClCompile Include="..\freesteel\src\pits\SurfXSliceRay.cpp" />
+    <ClCompile Include="PythonStuff.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

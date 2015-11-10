@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bolts">
+      <UniqueIdentifier>{06eccaa2-36e0-49cc-923a-56d186d53730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cages">
+      <UniqueIdentifier>{c1d191ed-5a3d-4386-a8e4-98bb46a38e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pits">
+      <UniqueIdentifier>{a33a5fb4-d1e5-4514-ad5e-168044779b4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\freesteel\src\bolts\bolts.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\debugfuncs.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\I1.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\P2.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\P3.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\Partition1.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\S1.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\smallfuncs.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\bolts\vo.h">
+      <Filter>bolts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\Area2_gen.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\cages.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\PathX.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\pathxseries.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\S2weave.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\SurfX.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\cages\SurfXboxed.h">
+      <Filter>cages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\CircCrossingStructure.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\CoreRoughGeneration.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\pits.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\S2weaveCell.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\S2weaveCellLinearCut.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\freesteel\src\pits\SLi_gen.h">
+      <Filter>pits</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\freesteel\src\bolts\Partition1.cpp">
+      <Filter>bolts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\bolts\S1.cpp">
+      <Filter>bolts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\PathX.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\PathXboxed.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\S1stockcircle.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\S2weave.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\SurfX.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\cages\SurfXboxed.cpp">
+      <Filter>cages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\CoreRoughGeneration.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\NormRay_gen.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCell.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCellLinearCut.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCellLinearCutTraverse.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\S2weaveCircle.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\SLi_gen.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\SurfXbuildcomponents.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\freesteel\src\pits\SurfXSliceRay.cpp">
+      <Filter>pits</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonStuff.cpp" />
+  </ItemGroup>
+</Project>

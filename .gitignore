@@ -3,6 +3,7 @@ Build
 *.suo
 *.bak
 *.user
+*.pyd
 HeeksCAD.exe
 *.opensdf
 Release
