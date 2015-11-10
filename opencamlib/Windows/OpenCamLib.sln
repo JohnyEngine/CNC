@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual C++ Express 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCamLib", "OpenCamLib.vcproj", "{A2B9038F-7C97-4AA5-93D8-AF6055102587}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCamLib", "OpenCamLib.vcxproj", "{A2B9038F-7C97-4AA5-93D8-AF6055102587}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
