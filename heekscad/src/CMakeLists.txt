@@ -6,13 +6,6 @@ add_definitions ( -Wall -DUSE_GENERIC_TREECTRL -DHEEKSCAD -DUNICODE -DTIXML_USE_
 #find OCE or OpenCASCADE
 set( CASCADE_LIBS TKBRep TKIGES TKSTEP TKXSBase TKBool TKernel TKFillet TKG2d TKG3d TKGeomAlgo TKGeomBase TKMath TKOffset TKPrim TKTopAlgo TKV3d TKMesh TKBO )
 set( CASCADE_NOTUSED_LIBS TKPShape TKShHealing TKLCAF TKFeat TKXCAF TKHLR TKPLCAF TKSTL TKSTEP209 TKAdvTools TKCAF TKV2d TKVRML TKXCAFSchema TKXDESTEP TKSTEPAttr FWOSPlugin TKSTEPBase TKService TKShapeSchema TKCDF )
-#inherits variables from parent dir - don't need to 'find_package ( OCE )' again
-if( ${OCE_FOUND} )
-  set( OpenCASCADE_LIBRARIES ${CASCADE_LIBS} )
-  set( OpenCASCADE_INCLUDE_DIR ${OCE_INCLUDE_DIRS} )
-else() #look for OpenCASCADE
-  find_package ( OpenCASCADE REQUIRED COMPONENTS ${CASCADE_LIBS} )
-endif()
 
 find_package( OpenGL REQUIRED )
 find_package( wxWidgets REQUIRED COMPONENTS base core gl aui )

@@ -1,17 +1,23 @@
-Build
 *.sdf
 *.suo
 *.bak
 *.user
 *.pyd
-HeeksCAD.exe
 *.opensdf
+*.idb
+*.pdb
+CMakeCache.txt
+HeeksCAD.exe
+Build
 Release
 ClipperRelease
 Debug
 ClipperDebug
 lib
+arc
+bin
 Unicode Release
 vc_msw
 vc_mswd
 dll
+CMakeFiles
