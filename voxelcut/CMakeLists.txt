@@ -41,11 +41,9 @@ include_directories (
   ${PYTHON_INCLUDE_DIRS}
 )
 
-link_directories( ${Boost_LIBRARY_DIRS}/i386 )
+link_directories( ${Boost_LIBRARY_DIRS} )
 
-if(${_MACHINE_ARCH_FLAG} MATCHES X86)
-  SET (CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /SAFESEH:NO")
-endif()
+SET(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /SAFESEH:NO")
 
 add_library(${targetname} SHARED ${HEADER_FILES} ${SOURCE_FILES} ${ASM_FILES} )
 

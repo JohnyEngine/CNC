@@ -23,5 +23,7 @@ set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_MINSIZEREL ${CMAKE_SOURCE_DIR}/arc)
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELWITHDEBINFO ${CMAKE_SOURCE_DIR}/arc)
 
 add_subdirectory( voxelcut )
+add_subdirectory( opencamlib )
+
 
 
