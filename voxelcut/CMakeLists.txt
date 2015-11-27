@@ -6,14 +6,15 @@ set(targetname voxelcut)
 
 project(${targetname} CXX ASM_MASM)
 
-#if(MSVC)
-  add_definitions( -DHAVE_ROUND )
-  add_definitions( -D__BOOST_PYTHON_NO_LIB__ )
-  add_definitions( -DBOOST_PYTHON_STATIC_LIB=1 )
-  add_definitions( -DBOOST_LIB_DIAGNOSTIC )
-  add_definitions( -DUNICODE -D_UNICODE )
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
-#endif(MSVC)
+SET(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+SET(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+
+add_definitions( -DHAVE_ROUND )
+add_definitions( -D__BOOST_PYTHON_NO_LIB__ )
+add_definitions( -DBOOST_PYTHON_STATIC_LIB=1 )
+add_definitions( -DBOOST_LIB_DIAGNOSTIC )
+add_definitions( -DUNICODE -D_UNICODE )
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 file(GLOB HEADER_FILES
   "msvc.h"

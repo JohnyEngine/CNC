@@ -1,7 +1,25 @@
-project( heekscad )
-cmake_minimum_required( VERSION 2.6 )
+cmake_minimum_required( VERSION 2.8 )
 
-add_definitions ( -Wall -DUSE_GENERIC_TREECTRL -DHEEKSCAD -DUNICODE -DTIXML_USE_STL )
+set( targetname HeeksCAD )
+
+project( ${targetname} )
+
+SET(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+SET(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+
+
+add_definitions( -DUSE_GENERIC_TREECTRL )
+add_definitions( -DHEEKSCAD )
+add_definitions( -D__WXMSW__ )
+add_definitions( -DUNICODE -D_UNICODE )
+add_definitions( -DNOPCH )
+add_definitions( -DWNT )
+add_definitions( -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE )
+add_definitions( -D_SECURE_SCL=0 -D_SECURE_ATL=0 )
+add_definitions( -D__WXMSW__ )
+add_definitions( -D_MATH_DEFINES_DEFINED )
+add_definitions( -DTIXML_USE_STL )
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 #find OCE or OpenCASCADE
 set( CASCADE_LIBS TKBRep TKIGES TKSTEP TKXSBase TKBool TKernel TKFillet TKG2d TKG3d TKGeomAlgo TKGeomBase TKMath TKOffset TKPrim TKTopAlgo TKV3d TKMesh TKBO )
@@ -18,14 +36,11 @@ include_directories ( SYSTEM
     )
 
 include_directories (
-    ${CMAKE_SOURCE_DIR}/src
     ${PYTHON_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIR}
     ${wxWidgets_INCLUDE_DIRS}
     ${libarea_INCLUDE_DIRS}
     )
-
-set ( EXECUTABLE_OUTPUT_PATH ../bin )
 
 set( heekscad_HDRS
     AboutBox.h
@@ -224,38 +239,14 @@ set( heekscad_SRCS
     wxImageLoader.cpp
     )
 
-# remove lsketchsolve below
-# -L../bin -ltinyxml -lheeksintf
-set( HeeksCAD_LIBS
-       -L../bin -lheekstinyxml -lheeksintf
-    )
-add_executable( heekscad ${heekscad_SRCS} ${platform_SRCS} )
-target_link_libraries( heekscad
-                       ${wxWidgets_LIBRARIES} ${OpenCASCADE_LIBRARIES}
-                       ${OPENGL_LIBRARIES} ${PYTHON_LIBRARIES} ${OSX_LIBS}
-                       ${HeeksCAD_LIBS} ${libarea_LIBRARIES} )
-message(STATUS "wxWidgets_LIBRARIES: ${wxWidgets_LIBRARIES}")
-message(STATUS "wxWidgets_ROOT_DIR: ${wxWidgets_ROOT_DIR}")
-message(STATUS "wxWidgets_INCLUDE_DIRS: ${wxWidgets_INCLUDE_DIRS}")
+link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LIBRARY_DIR} )
 
-set_target_properties( heekscad PROPERTIES VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
-install( TARGETS heekscad DESTINATION bin )
+add_executable( ${targetname} ${heekscad_SRCS} ${heekscad_HDRS} ${platform_SRCS} ${CMAKE_CURRENT_SOURCE_DIR}/HeeksCAD.rc)
 
-# Bitmaps, fonts, etc.
-foreach( bitmap_relpath "" "angle" "cuboid" )
-  file( GLOB bitmaps_${bitmap_relpath} "${CMAKE_CURRENT_SOURCE_DIR}/../bitmaps/${bitmap_relpath}/*.png"
-                   "${CMAKE_CURRENT_SOURCE_DIR}/../bitmaps/${bitmap_relpath}/*.svg"
-                   "${CMAKE_CURRENT_SOURCE_DIR}/../bitmaps/${bitmap_relpath}/*.glf"
-    )
-  install( FILES ${bitmaps_${bitmap_relpath}} DESTINATION share/heekscad/bitmaps/${bitmap_relpath} )
-endforeach()
+target_link_libraries( ${targetname}
+                       ${wxWidgets_LIBRARIES} ${CASCADE_LIBS}
+                       ${OPENGL_LIBRARIES} ${PYTHON_LIBRARIES}
+                       heekstinyxml libarea heeksintf)
 
-file( GLOB icons "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png" )
-install( FILES ${icons} DESTINATION share/heekscad/icons )
-
-file( GLOB menu_icon "${CMAKE_CURRENT_SOURCE_DIR}/../icons/HeeksCAD.svg" )
-install( FILES ${menu_icon} DESTINATION share/icons/hicolor/scalable/apps ) # freedesktop.org standard location
-
-file( GLOB desktop "${CMAKE_CURRENT_SOURCE_DIR}/../HeeksCAD.desktop" )
-install( FILES ${desktop} DESTINATION share/applications )
-
+set_target_properties( ${targetname} PROPERTIES VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
+set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )

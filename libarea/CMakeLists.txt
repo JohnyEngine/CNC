@@ -1,54 +1,21 @@
-project(area)
+cmake_minimum_required(VERSION 2.8)
 
-cmake_minimum_required(VERSION 2.4)
+set(targetname libarea)
 
-# Turn compiler warnings up to 11, at least with gcc.  
-if (CMAKE_BUILD_TOOL MATCHES "make")
-    MESSAGE(STATUS "setting gcc options: -Wall -Werror -Wno-deprecated -pedantic-errors")
-    # NON-optimized build:
-    # add_definitions( -Wall  -Wno-deprecated -Werror -pedantic-errors)
-    add_definitions(-fPIC)
-endif (CMAKE_BUILD_TOOL MATCHES "make")
+project(${targetname})
 
-option(BUILD_TYPE
-  "Build type: Release=ON/Debug=OFF  " ON)
-option(USE_CLIPPER_FOR_CPP
-  "Use clipper library (ON) or kbool (OFF) for C++ portion of libarea  " ON)
-option(USE_CLIPPER_FOR_PYTHON
-  "Use clipper library (ON) or kbool (OFF) for Python portion of libarea  " OFF)
+SET(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+SET(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
 
-if (BUILD_TYPE)
-    MESSAGE(STATUS " CMAKE_BUILD_TYPE = Release")
-    set(CMAKE_BUILD_TYPE Release)
-endif(BUILD_TYPE)
-
-if (NOT BUILD_TYPE)
-    MESSAGE(STATUS " CMAKE_BUILD_TYPE = Debug")
-    set(CMAKE_BUILD_TYPE Debug)
-endif(NOT BUILD_TYPE)
-
-# this figures out the Python include directories and adds them to the
-# header file search path
-execute_process(
-    COMMAND python-config --includes
-    COMMAND sed -r "s/-I//g; s/ +/;/g"
-    COMMAND tr -d '\n'
-    OUTPUT_VARIABLE Python_Includes
-)
-message(STATUS "Python include dir:" ${Python_Includes})
+add_definitions( -DHAVE_ROUND )
+add_definitions( -D__BOOST_PYTHON_NO_LIB__ )
+add_definitions( -DBOOST_PYTHON_STATIC_LIB=1 )
+add_definitions( -DBOOST_LIB_DIAGNOSTIC )
+add_definitions( -DUNICODE -D_UNICODE )
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 include_directories(${Python_Includes})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
-find_package( Boost COMPONENTS python REQUIRED)  # find BOOST and boost-python
-if(Boost_FOUND)
-    include_directories(${Boost_INCLUDE_DIRS})
-    MESSAGE(STATUS "found Boost: " ${Boost_LIB_VERSION})
-    MESSAGE(STATUS "boost-incude dirs are: " ${Boost_INCLUDE_DIRS})
-    MESSAGE(STATUS "boost-python lib is: " ${Boost_PYTHON_LIBRARY})
-    MESSAGE(STATUS "boost_LIBRARY_DIRS is: " ${Boost_LIBRARY_DIRS})
-    MESSAGE(STATUS "Boost_LIBRARIES is: " ${Boost_LIBRARIES})    
-endif()
 
 # this defines the source-files for library
 set(AREA_SRC_COMMON
@@ -69,8 +36,6 @@ set(AREA_SRC_COMMON
 )
 
 set(AREA_SRC_KBOOL
-    AreaBoolean.cpp
-
     kbool/src/booleng.cpp
     kbool/src/record.cpp
     kbool/src/scanbeam.cpp
@@ -79,7 +44,7 @@ set(AREA_SRC_KBOOL
     kbool/src/instonly.cpp
     kbool/src/line.cpp
     kbool/src/link.cpp
-    kbool/src/lpoint.cpp    
+    kbool/src/lpoint.cpp
     kbool/src/node.cpp
 )
 
@@ -94,95 +59,20 @@ set(PYAREA_SRC
     PythonStuff.cpp
 )
 
-# this defines the headers
-if(DEFINED INCLUDE_INSTALL_DIR)
-    set(includedir ${INCLUDE_INSTALL_DIR})
-else(DEFINED INCLUDE_INSTALL_DIR)
-    set(INCLUDE_INSTALL_DIR include)
-    set(includedir ${CMAKE_INSTALL_PREFIX}/${INCLUDE_INSTALL_DIR})
-endif(DEFINED INCLUDE_INSTALL_DIR)
-
-file(GLOB headers "${CMAKE_CURRENT_SOURCE_DIR}/kurve/*.h")
-install(FILES ${headers} DESTINATION ${INCLUDE_INSTALL_DIR}/area/kurve COMPONENT headers)
-file(GLOB headers "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
-install(FILES ${headers} DESTINATION ${INCLUDE_INSTALL_DIR}/area COMPONENT headers)
-
 # include directories
 include_directories( 
     kurve/
     kbool/src/
 )
 
-# this makes the shared library
-if (USE_CLIPPER_FOR_CPP)
-  add_library(
-      libarea
-      SHARED
-      ${AREA_SRC_COMMON}
-      ${AREA_SRC_CLIPPER}
-  )
-else (USE_CLIPPER_FOR_CPP)
-  add_library(
-      libarea
-      SHARED
-      ${AREA_SRC_COMMON}
-      ${AREA_SRC_KBOOL}
-  )
-endif (USE_CLIPPER_FOR_CPP)
-set_target_properties(libarea PROPERTIES PREFIX "")
-set_target_properties(libarea PROPERTIES SOVERSION 0)
-
-# this part allow to support multi-arch
-# ie. Debian builder sets correctly the target path according to architecture
-# e.g. /usr/lib/i386-linux-gnu, /usr/lib/x86_64-linux-gnu
-# TODO: Support this feature
-#if(DEFINED CMAKE_INSTALL_LIBDIR)
-#    set(CMAKE_INSTALL_LIBDIR ${CMAKE_INSTALL_LIBDIR})
-#else(DEFINED CMAKE_INSTALL_LIBDIR)
-#    set(CMAKE_INSTALL_LIBDIR ${CMAKE_INSTALL_PREFIX}/lib)
-#endif(DEFINED CMAKE_INSTALL_LIBDIR)
-
-install(TARGETS libarea LIBRARY DESTINATION lib/ COMPONENT libraries)
-message(STATUS "Library will be installed to: " ${CMAKE_INSTALL_PREFIX}/lib)
-
-
-# this makes the Python module
-if (USE_CLIPPER_FOR_PYTHON)
-  add_library(
-      area
-      MODULE
-      ${AREA_SRC_COMMON}
-      ${AREA_SRC_CLIPPER}
-      ${PYAREA_SRC}
-  )
-else (USE_CLIPPER_FOR_PYTHON)
-  add_library(
-      area
-      MODULE
-      ${AREA_SRC_COMMON}
-      ${AREA_SRC_KBOOL}
-      ${PYAREA_SRC}
-  )
-endif (USE_CLIPPER_FOR_PYTHON)
-target_link_libraries(area ${Boost_LIBRARIES})
-set_target_properties(area PROPERTIES PREFIX "") 
-
-# this figures out where to install the Python modules
-execute_process(
-    COMMAND python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"
-    OUTPUT_VARIABLE Python_site_packages
-    OUTPUT_STRIP_TRAILING_WHITESPACE
+add_library(
+  ${targetname}
+  STATIC
+  ${AREA_SRC_COMMON}
+  ${AREA_SRC_KBOOL}
+  ${AREA_SRC_CLIPPER}
 )
 
-# strip away /usr/local/ because that is what CMAKE_INSTALL_PREFIX is set to
-# also, since there is no leading "/", it makes ${Python_site_packages} a relative path.
-STRING(REGEX REPLACE "/usr/local/(.*)$" "\\1" Python_site_packages "${Python_site_packages}" )
-STRING(REGEX REPLACE "/usr/(.*)$" "\\1" Python_site_packages "${Python_site_packages}" )
-
-message(STATUS "Python module will be installed to: " ${CMAKE_INSTALL_PREFIX}/${Python_site_packages})
-
-# this installs the python library
-install(
-    TARGETS area
-    LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/${Python_site_packages}
-)
+set_target_properties(${targetname} PROPERTIES PREFIX "")
+set_target_properties(${targetname} PROPERTIES SOVERSION 0)
+set_target_properties(${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
