@@ -2,7 +2,7 @@
 # ---------------------------------------------------------
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-set(targetname VoxelCut)
+set(targetname voxelcut)
 
 project(${targetname} CXX ASM_MASM)
 

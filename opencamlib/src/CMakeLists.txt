@@ -3,13 +3,14 @@ project(OpenCamLib)
 cmake_minimum_required(VERSION 2.4)
 
 #if(MSVC)
+  add_definitions( -DHAVE_ROUND )
   add_definitions( -D__BOOST_PYTHON_NO_LIB__ )
   add_definitions( -DBOOST_PYTHON_STATIC_LIB=1 )
   add_definitions( -DBOOST_LIB_DIAGNOSTIC )
   add_definitions( -DUNICODE -D_UNICODE )
   add_definitions( -D_USRDLL )
   add_definitions( -DOPENCAMLIB_EXPORTS )
-
+  add_definitions( -D_CRT_SECURE_NO_WARNINGS)
 #endif(MSVC)
 
 include_directories (
