@@ -1,35 +1,17 @@
-set HEEKSCADPATH=D:\HeeksCAD
-set HEEKSCNCPATH=%HEEKSCADPATH%\HeeksCNC
-set HEEKSCNCSOURCEPATH=D:\GitHub\CNC\heekscnc
-set LIBAREAPATH=D:\GitHub\CNC\libarea
-set LIBOCLPATH=D:\GitHub\CNC\opencamlib\Windows\Release
-set VOXELCUTPATH=D:\GitHub\CNC\voxelcut
-set PYTHONPATH=C:\Python27
 
-mkdir "%HEEKSCADPATH%"
-mkdir "%HEEKSCNCPATH%"
-
-copy /y "%PYTHONPATH%\pythonw.exe" "%HEEKSCNCPATH%\python.exe"
 copy /y "%HEEKSCNCSOURCEPATH%\post for installer.bat" "%HEEKSCNCPATH%\post.bat"
 copy /y "%HEEKSCNCSOURCEPATH%\nc_read for installer.bat" "%HEEKSCNCPATH%\nc_read.bat"
 copy /y "%HEEKSCNCSOURCEPATH%\backplot.py" "%HEEKSCNCPATH%\backplot.py"
 copy /y "%HEEKSCNCSOURCEPATH%\area_funcs.py" "%HEEKSCNCPATH%\area_funcs.py"
-mkdir "%HEEKSCNCPATH%\Boolean"
-copy /y "%LIBAREAPATH%\dll\area.pyd" "%HEEKSCNCPATH%\Boolean\area.pyd"
-copy /y "%LIBAREAPATH%\dll\area.pyd" "%HEEKSCNCPATH%\area.pyd"
 copy /y "%HEEKSCNCSOURCEPATH%\kurve_funcs.py" "%HEEKSCNCPATH%\kurve_funcs.py"
 copy /y "%HEEKSCNCSOURCEPATH%\area_funcs.py" "%HEEKSCNCPATH%\area_funcs.py"
-mkdir "%HEEKSCNCPATH%\Clipper"
-copy /y "%LIBAREAPATH%\dll\Clipper\area.pyd" "%HEEKSCNCPATH%\Clipper\area.pyd"
 copy /y "%HEEKSCNCSOURCEPATH%\ocl_funcs.py" "%HEEKSCNCPATH%\ocl_funcs.py"
-copy /y "%LIBOCLPATH%\ocl.pyd" "%HEEKSCNCPATH%\ocl.pyd"
 copy /y "%HEEKSCNCSOURCEPATH%\depth_params.py" "%HEEKSCNCPATH%\depth_params.py"
 copy /y "%HEEKSCNCSOURCEPATH%\*.tooltable" "%HEEKSCNCPATH%"
 copy /y "%HEEKSCNCSOURCEPATH%\script_ops.xml" "%HEEKSCNCPATH%\script_ops.xml"
 mkdir "%HEEKSCNCPATH%\nc"
 copy /y "%HEEKSCNCSOURCEPATH%\nc\*.py" "%HEEKSCNCPATH%\nc"
 copy /y "%HEEKSCNCSOURCEPATH%\nc\machines.xml" "%HEEKSCNCPATH%\nc\machines.xml"
-copy /y "%HEEKSCNCSOURCEPATH%\src\Unicode Release\HeeksCNC.dll" "%HEEKSCNCPATH%\HeeksCNC.dll"
 mkdir "%HEEKSCNCPATH%\bitmaps"
 copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\*.png" "%HEEKSCNCPATH%\bitmaps"
 mkdir "%HEEKSCNCPATH%\bitmaps\ctool"
@@ -48,9 +30,9 @@ mkdir "%HEEKSCNCPATH%\bitmaps\surface"
 copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\surface\*.png" "%HEEKSCNCPATH%\bitmaps\surface"
 mkdir "%HEEKSCNCPATH%\icons"
 copy /y "%HEEKSCNCSOURCEPATH%\icons\*.png" "%HEEKSCNCPATH%\icons"
+copy /y "%HEEKSCNCSOURCEPATH%\Toolpath.py" "%HEEKSCNCPATH%\Toolpath.py"
+
 rem copy all the voxelcut files into the same place as HeeksCNC, to re-use some of the files
 copy /y "%VOXELCUTPATH%\voxelcut.bat" "%HEEKSCNCPATH%\voxelcut.bat"
-copy /y "%VOXELCUTPATH%\voxelcut.pyd" "%HEEKSCNCPATH%\voxelcut.pyd"
 copy /y "%VOXELCUTPATH%\*.py" "%HEEKSCNCPATH%"
 copy /y "%VOXELCUTPATH%\bitmaps\*.png" "%HEEKSCNCPATH%\bitmaps"
-copy /y "%HEEKSCNCSOURCEPATH%\Toolpath.py" "%HEEKSCNCPATH%\Toolpath.py"

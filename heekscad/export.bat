@@ -1,13 +1,3 @@
-rem set HEEKSCADPATH=D:\HeeksCAD
-rem set HEEKSCADSOURCEPATH=D:\GitHub\CNC\heekscad
-rem set WXBINARIESPATH=D:\wxWidgets\lib\vc_dll
-rem set OPENCASCADEBINPATH=D:\OpenCASCADE\opencascade-6.9.1\win32\vc12\bin
-rem set TBBBINPATH=D:\OpenCASCADE\tbb44_20150728oss\bin\ia32\vc12
-rem set FREEIMAGEBINPATH=D:\OpenCASCADE\freeimage-3.17.0-vc12-32\bin
-rem set FREETYPEBINPATH=D:\OpenCASCADE\freetype-2.5.5-vc12-32\bin
-rem set GETTEXTPATH=D:\insttools\gettext
-
-mkdir "%HEEKSCADPATH%"
 rem Translation
 mkdir "%HEEKSCADPATH%\de"
 "%GETTEXTPATH%\msgfmt.exe" -o "%HEEKSCADPATH%\de\HeeksCAD.mo" "%HEEKSCADSOURCEPATH%\translations\de\HeeksCAD.po"
@@ -26,7 +16,6 @@ mkdir "%HEEKSCADPATH%\sk"
 mkdir "%HEEKSCADPATH%\zh"
 "%GETTEXTPATH%\msgfmt.exe" -o "%HEEKSCADPATH%\zh\HeeksCAD.mo" "%HEEKSCADSOURCEPATH%\translations\zh\HeeksCAD.po"
 rem HeeksCAD
-copy /y "%HEEKSCADSOURCEPATH%\HeeksCAD.exe" "%HEEKSCADPATH%\HeeksCAD.exe"
 mkdir "%HEEKSCADPATH%\bitmaps"
 copy /y "%HEEKSCADSOURCEPATH%\bitmaps\*.png" "%HEEKSCADPATH%\bitmaps"
 copy /y "%HEEKSCADSOURCEPATH%\bitmaps\font.glf" "%HEEKSCADPATH%\bitmaps\font.gl "
@@ -66,4 +55,5 @@ copy /y "%OPENCASCADEBINPATH%\TKOffset.dll" "%HEEKSCADPATH%"
 copy /y "%OPENCASCADEBINPATH%\TKV3d.dll" "%HEEKSCADPATH%"
 copy /y "%OPENCASCADEBINPATH%\TKService.dll" "%HEEKSCADPATH%"
 copy /y "%OPENCASCADEBINPATH%\TKMesh.dll" "%HEEKSCADPATH%"
+copy /y "%OPENCASCADEBINPATH%\TKMath.dll" "%HEEKSCADPATH%"
 copy /y "%OPENCASCADEBINPATH%\TKHLR.dll" "%HEEKSCADPATH%"
