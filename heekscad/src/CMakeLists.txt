@@ -16,32 +16,93 @@ add_definitions( -DNOPCH )
 add_definitions( -DWNT )
 add_definitions( -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE )
 add_definitions( -D_SECURE_SCL=0 -D_SECURE_ATL=0 )
-add_definitions( -D__WXMSW__ )
+add_definitions( -DWXUSINGDLL )
 add_definitions( -D_MATH_DEFINES_DEFINED )
 add_definitions( -DTIXML_USE_STL )
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
-#find OCE or OpenCASCADE
-set( CASCADE_LIBS TKBRep TKIGES TKSTEP TKXSBase TKBool TKernel TKFillet TKG2d TKG3d TKGeomAlgo TKGeomBase TKMath TKOffset TKPrim TKTopAlgo TKV3d TKMesh TKBO )
-set( CASCADE_NOTUSED_LIBS TKPShape TKShHealing TKLCAF TKFeat TKXCAF TKHLR TKPLCAF TKSTL TKSTEP209 TKAdvTools TKCAF TKV2d TKVRML TKXCAFSchema TKXDESTEP TKSTEPAttr FWOSPlugin TKSTEPBase TKService TKShapeSchema TKCDF )
-
-find_package( OpenGL REQUIRED )
-find_package( wxWidgets REQUIRED COMPONENTS base core gl aui )
-find_package( PythonLibs REQUIRED )
-
-include(${wxWidgets_USE_FILE})
-
-include_directories ( SYSTEM
-    ${OpenCASCADE_INCLUDE_DIR}
-    )
-
 include_directories (
+	${CMAKE_CURRENT_SOURCE_DIR}
     ${PYTHON_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIR}
+	${OpenCASCADE_INCLUDE_DIR}
     ${wxWidgets_INCLUDE_DIRS}
     ${libarea_INCLUDE_DIRS}
+	../interface/
     )
 
+set( heeksintf_SRCS
+    ../interface/DoubleInput.cpp
+    ../interface/Geom.cpp
+    ../interface/HDialogs.cpp
+    ../interface/HeeksCADInterface.cpp
+    ../interface/HeeksColor.cpp
+    ../interface/HeeksObj.cpp
+    ../interface/HeeksObjDlg.cpp
+    ../interface/IdNamedObj.cpp
+    ../interface/IdNamedObjList.cpp
+    ../interface/LeftAndRight.cpp
+    ../interface/MarkedObject.cpp
+    ../interface/NiceTextCtrl.cpp
+    ../interface/ObjList.cpp
+    ../interface/PictureFrame.cpp
+    ../interface/PropertyCheck.cpp
+    ../interface/PropertyChoice.cpp
+    ../interface/PropertyColor.cpp
+    ../interface/PropertyDouble.cpp
+    ../interface/PropertyFile.cpp
+    ../interface/PropertyInt.cpp
+    ../interface/PropertyLength.cpp
+    ../interface/PropertyList.cpp
+    ../interface/PropertyString.cpp
+    ../interface/PropertyVertex.cpp
+    ../interface/ToolImage.cpp
+    ../interface/ToolList.cpp
+    ../interface/strconv.cpp
+   )
+   
+set( heeksintf_HDRS
+    ../interface/Box.h
+    ../interface/DoubleInput.h
+    ../interface/Geom.h
+    ../interface/GripData.h
+    ../interface/GripperTypes.h
+    ../interface/HDialogs.h
+    ../interface/HeeksCADInterface.h
+    ../interface/HeeksColor.h
+    ../interface/HeeksObj.h
+    ../interface/HeeksObjDlg.h
+    ../interface/IdNamedObj.h
+    ../interface/IdNamedObjList.h
+    ../interface/InputMode.h
+    ../interface/LeftAndRight.h
+    ../interface/MarkedObject.h
+    ../interface/Material.h
+    ../interface/NiceTextCtrl.h
+    ../interface/NurbSurfaceParams.h
+    ../interface/ObjList.h
+    ../interface/Observer.h
+    ../interface/PictureFrame.h
+    ../interface/Plugin.h
+    ../interface/Property.h
+    ../interface/PropertyCheck.h
+    ../interface/PropertyChoice.h
+    ../interface/PropertyColor.h
+    ../interface/PropertyDouble.h
+    ../interface/PropertyFile.h
+    ../interface/PropertyInt.h
+    ../interface/PropertyLength.h
+    ../interface/PropertyList.h
+    ../interface/PropertyString.h
+    ../interface/PropertyVertex.h
+    ../interface/SketchOrder.h
+    ../interface/Tool.h
+    ../interface/ToolImage.h
+    ../interface/ToolList.h
+    ../interface/strconv.h
+   )	
+	
+	
 set( heekscad_HDRS
     AboutBox.h
     AutoSave.h
@@ -239,14 +300,25 @@ set( heekscad_SRCS
     wxImageLoader.cpp
     )
 
-link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LIBRARY_DIR} )
+link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LINK_DIRECTORY} ${wxWidgets_LIB_DIR} )
 
-add_executable( ${targetname} ${heekscad_SRCS} ${heekscad_HDRS} ${platform_SRCS} ${CMAKE_CURRENT_SOURCE_DIR}/HeeksCAD.rc)
+add_executable( ${targetname}
+				${heekscad_SRCS}
+				${heekscad_HDRS}
+				${heeksintf_SRCS}
+				${heeksintf_HDRS}
+				${CMAKE_CURRENT_SOURCE_DIR}/HeeksCAD.rc)
 
 target_link_libraries( ${targetname}
-                       ${wxWidgets_LIBRARIES} ${CASCADE_LIBS}
-                       ${OPENGL_LIBRARIES} ${PYTHON_LIBRARIES}
-                       heekstinyxml libarea heeksintf)
-
+					   ${OpenCASCADE_LIBRARIES}
+                       ${OPENGL_LIBRARIES} 
+					   ${PYTHON_LIBRARIES}
+					   wxmsw28u_core
+					   wxmsw28u_aui
+					   wxmsw28u_gl
+					   wxbase28u
+					   libarea
+					   heekstinyxml )
 set_target_properties( ${targetname} PROPERTIES VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
+#set_target_properties( ${targetname} PROPERTIES LINK_FLAGS -Wl,-Bsymbolic-functions )
 set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )

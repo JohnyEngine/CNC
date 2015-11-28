@@ -6,28 +6,39 @@ set( CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
 
 project( Heeks )
 
-MESSAGE(STATUS "OpenCASCADE root dir is: " $ENV{CASROOT})
-
 MESSAGE(STATUS "MSVC_VERSION is: " ${MSVC_VERSION})
 
 find_package( PythonLibs REQUIRED )
 find_package( Boost REQUIRED)
+find_package( OpenGL REQUIRED )
 
+set( wxWidgets_LIB_DIR ${wxWidgets_ROOT_DIR}\\lib\\vc_dll CACHE STRING "" FORCE )
+set( wxWidgets_CONFIGURATION mswu CACHE STRING "" FORCE )
 
-set( OpenCASCADE_INCLUDE_DIR $ENV{CASROOT}/inc )
+find_package( wxWidgets REQUIRED)
 
 if (MSVC_VERSION EQUAL "1800")
   set( MSVER_STR "vc12" )
 else (MSVC_VERSION EQUAL "1800")
-  if (MSVC_VERSION EQUAL 1900)
+  if (MSVC_VERSION EQUAL "1900")
     set( MSVER_STR "vc14" )
   else (MSVC_VERSION EQUAL "1900")
     error( "Visual Studio Version ${MSVC_VERSION} is not supported!!!" )
   endif (MSVC_VERSION EQUAL "1900")
 endif (MSVC_VERSION EQUAL "1800")
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
+MESSAGE(STATUS "OpenCASCADE root dir is: " $ENV{CASROOT})
+
+set( CASCADE_LIBS TKBRep TKIGES TKSTEP TKXSBase TKBool TKernel TKFillet TKG2d TKG3d TKGeomAlgo TKGeomBase TKMath TKOffset TKPrim TKTopAlgo TKV3d TKMesh TKBO )
+set( CASCADE_NOTUSED_LIBS TKPShape TKShHealing TKLCAF TKFeat TKXCAF TKHLR TKPLCAF TKSTL TKSTEP209 TKAdvTools TKCAF TKV2d TKVRML TKXCAFSchema TKXDESTEP TKSTEPAttr FWOSPlugin TKSTEPBase TKService TKShapeSchema TKCDF )
+
+find_package ( OpenCASCADE REQUIRED COMPONENTS ${CASCADE_LIBS} )
+
+set( OpenCASCADE_INCLUDE_DIR $ENV{CASROOT}/inc )
 set( OpenCASCADE_LIBRARY_DIR $ENV{CASROOT}/win32/${MSVER_STR}/lib )
+
 set( libarea_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/libarea )
 
 set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/Clipper )
@@ -61,13 +72,12 @@ SET_PROPERTY(TARGET libarea PROPERTY FOLDER "Common/Area")
 
 add_subdirectory( voxelcut )
 add_subdirectory( opencamlib )
+add_subdirectory( heekscad/tinyxml )
 
 SET_PROPERTY(TARGET voxelcut PROPERTY FOLDER "Common")
 SET_PROPERTY(TARGET ocl PROPERTY FOLDER "Common")
+SET_PROPERTY(TARGET heekstinyxml PROPERTY FOLDER "Common")
 
-add_subdirectory( heekscad/tinyxml )
-add_subdirectory( heekscad/interface )
 add_subdirectory( heekscad/src )
+add_subdirectory( heekscnc/src )
 
-SET_PROPERTY(TARGET heekstinyxml PROPERTY FOLDER "Common/HeeksCAD")
-SET_PROPERTY(TARGET heeksintf PROPERTY FOLDER "Common/HeeksCAD")

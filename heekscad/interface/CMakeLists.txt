@@ -4,8 +4,8 @@ set( targetname heeksintf )
 
 project( ${targetname} )
 
-SET(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
-SET(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+set(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+set(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
 
 add_definitions( -DUSE_GENERIC_TREECTRL )
 add_definitions( -DHEEKSCAD )
@@ -22,7 +22,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 # wxWidgets
 find_package( wxWidgets REQUIRED COMPONENTS base core gl )
-include(${wxWidgets_USE_FILE})
 
 # python libs
 find_package( PythonLibs REQUIRED )

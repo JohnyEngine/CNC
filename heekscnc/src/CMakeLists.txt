@@ -1,49 +1,70 @@
-project( libheekscnc )
+cmake_minimum_required( VERSION 2.8 )
 
-cmake_minimum_required( VERSION 2.6 )
+set( targetname HeeksCNC )
 
-set ( CMAKE_BUILD_TYPE Debug )
-add_definitions ( -Wall -DHEEKSPLUGIN -DHEEKSCNC -DUNICODE -DTIXML_USE_STL
-                  -DOPEN_SOURCE_GEOMETRY -DWXUSINGDLL )
-find_package( wxWidgets REQUIRED COMPONENTS base core gl )
+project( ${targetname} )
 
-#find OCE or OpenCASCADE
-set( CASCADE_LIBS "TKernel;TKBRep;TKTopAlgo;TKMath;TKV3d;TKGeomBase;TKGeomAlgo;TKShHealing;TKBO;TKBool;TKOffset;TKLCAF;TKMath;TKService" )
-#inherits variables from parent dir - don't need to 'find_package ( OCE )' again
-if( ${OCE_FOUND} )
-  set( OpenCASCADE_LIBRARIES ${CASCADE_LIBS} )
-  set( OpenCASCADE_INCLUDE_DIR ${OCE_INCLUDE_DIRS} )
-else() #look for OpenCASCADE
-  set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
-  find_package ( OpenCASCADE REQUIRED COMPONENTS ${CASCADE_LIBS} )
-endif()
+SET(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
+SET(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
 
-find_package ( HeeksCAD REQUIRED )
-find_package ( libheekstinyxml REQUIRED )
-
-include(${wxWidgets_USE_FILE})
-
-include_directories ( SYSTEM
-    ${OpenCASCADE_INCLUDE_DIR}
-    )
+add_definitions( -DUSE_GENERIC_TREECTRL )
+add_definitions( -D__WXMSW__ )
+add_definitions( -DUNICODE -D_UNICODE )
+add_definitions( -DNOPCH )
+add_definitions( -DWNT )
+add_definitions( -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE )
+add_definitions( -D_SECURE_SCL=0 -D_SECURE_ATL=0 )
+add_definitions( -D_MATH_DEFINES_DEFINED )
+add_definitions( -DTIXML_USE_STL )
+add_definitions( -DHEEKSPLUGIN )
+add_definitions( -DHEEKSCNC )
+add_definitions( -DOPEN_SOURCE_GEOMETRY )
+add_definitions( -DWXUSINGDLL )
+add_definitions( -DSTABLE_OPS_ONLY )
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 include_directories (
-    ${CMAKE_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${OpenCASCADE_INCLUDE_DIR}
+    ${OPENGL_INCLUDE_DIR}
     ${wxWidgets_INCLUDE_DIRS}
-    ${HeeksCAD_SRC_DIR}
-    ../kurve/geometry ../kurve/messages
-    ${libheekstinyxml_INCLUDE_DIRS}
+	${CMAKE_SOURCE_DIR}/heekscad
+    ${CMAKE_SOURCE_DIR}/heekscad/src
+	${CMAKE_SOURCE_DIR}/heekscad/interface
+	${CMAKE_SOURCE_DIR}/heekscad/tinyxml
     )
-set ( LIBRARY_OUTPUT_PATH ../bin )
 
-if( UNIX )
-  #set( platform_SRCS some_necessary_linux_file.cpp )
-  add_definitions( -DCMAKE_UNIX ) #defining this changes resource and script locations
-else( UNIX )
-  #windows
-  set( platform_SRCS dllmain.cpp stdafx.cpp )
-endif( UNIX )
+set( platform_SRCS dllmain.cpp stdafx.cpp )
+
+set( HeeksCAD_SRC_DIR ${CMAKE_SOURCE_DIR}/heekscad )
+
+set( heekscad_SRCS
+    ${HeeksCAD_SRC_DIR}/interface/Geom.cpp
+    ${HeeksCAD_SRC_DIR}/interface/HDialogs.cpp
+    ${HeeksCAD_SRC_DIR}/interface/HeeksColor.cpp
+    ${HeeksCAD_SRC_DIR}/interface/HeeksObj.cpp
+    ${HeeksCAD_SRC_DIR}/interface/HeeksObjDlg.cpp
+    ${HeeksCAD_SRC_DIR}/interface/IdNamedObj.cpp
+    ${HeeksCAD_SRC_DIR}/interface/IdNamedObjList.cpp
+    ${HeeksCAD_SRC_DIR}/interface/LeftAndRight.cpp
+    ${HeeksCAD_SRC_DIR}/interface/MarkedObject.cpp
+    ${HeeksCAD_SRC_DIR}/interface/NiceTextCtrl.cpp
+    ${HeeksCAD_SRC_DIR}/interface/ObjList.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PictureFrame.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyCheck.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyChoice.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyColor.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyDouble.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyFile.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyInt.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyLength.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyList.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyString.cpp
+    ${HeeksCAD_SRC_DIR}/interface/PropertyVertex.cpp
+    ${HeeksCAD_SRC_DIR}/interface/ToolImage.cpp
+    ${HeeksCAD_SRC_DIR}/interface/strconv.cpp
+    )
 
 set( heekscnc_HDRS
     CNCPoint.h
@@ -96,33 +117,6 @@ set( heekscnc_HDRS
     stdafx.h
    )
 
-set( heekscad_SRCS
-    ${HeeksCAD_SRC_DIR}/interface/Geom.cpp
-    ${HeeksCAD_SRC_DIR}/interface/HDialogs.cpp
-    ${HeeksCAD_SRC_DIR}/interface/HeeksColor.cpp
-    ${HeeksCAD_SRC_DIR}/interface/HeeksObj.cpp
-    ${HeeksCAD_SRC_DIR}/interface/HeeksObjDlg.cpp
-    ${HeeksCAD_SRC_DIR}/interface/IdNamedObj.cpp
-    ${HeeksCAD_SRC_DIR}/interface/IdNamedObjList.cpp
-    ${HeeksCAD_SRC_DIR}/interface/LeftAndRight.cpp
-    ${HeeksCAD_SRC_DIR}/interface/MarkedObject.cpp
-    ${HeeksCAD_SRC_DIR}/interface/NiceTextCtrl.cpp
-    ${HeeksCAD_SRC_DIR}/interface/ObjList.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PictureFrame.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyCheck.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyChoice.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyColor.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyDouble.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyFile.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyInt.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyLength.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyList.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyString.cpp
-    ${HeeksCAD_SRC_DIR}/interface/PropertyVertex.cpp
-    ${HeeksCAD_SRC_DIR}/interface/ToolImage.cpp
-    ${HeeksCAD_SRC_DIR}/interface/strconv.cpp
-    )
-
 set( heekscnc_SRCS
     CNCPoint.cpp
     CTool.cpp
@@ -173,27 +167,18 @@ set( heekscnc_SRCS
     stdafx.cpp
    )
 
-add_library( heekscnc SHARED ${heekscnc_SRCS} ${heekscad_SRCS} ${platform_SRCS} )
-target_link_libraries( heekscnc ${wxWidgets_LIBRARIES}  ${OpenCASCADE_LIBRARIES} ${libheekstinyxml_LIBRARIES} )
-set_target_properties( heekscnc PROPERTIES SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
-set_target_properties( heekscnc PROPERTIES LINK_FLAGS -Wl,-Bsymbolic-functions )
-
-#---------------- the lines below tell cmake what files get installed where.---------------------
-#------------------- this is used for 'make install' and 'make package' -------------------------
-install( TARGETS heekscnc DESTINATION lib )
-
-install( DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../bitmaps/" DESTINATION share/heekscnc/bitmaps/ PATTERN .svn EXCLUDE )
-
-file( GLOB icons "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png" )
-install( FILES ${icons} DESTINATION share/heekscnc/icons )
-
-file(GLOB nc "${CMAKE_CURRENT_SOURCE_DIR}/../nc/*.py" "${CMAKE_CURRENT_SOURCE_DIR}/../nc/*.txt") 
-install(FILES ${nc} DESTINATION lib/heekscnc/nc )
-
-file( GLOB hcnc_defaults
-    "${CMAKE_CURRENT_SOURCE_DIR}/../default.*"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../nc/machines.xml"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../script_ops.xml"
-    )
-install( FILES ${hcnc_defaults} DESTINATION share/heekscnc/ )
+link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LINK_DIRECTORY} ${wxWidgets_LIB_DIR} )
+   
+add_library( ${targetname} SHARED ${heekscnc_SRCS} ${heekscad_SRCS} ${platform_SRCS} )
+target_link_libraries( ${targetname} 
+					   ${OpenCASCADE_LIBRARIES}
+                       ${OPENGL_LIBRARIES} 
+					   wxmsw28u_core
+					   wxmsw28u_aui
+					   wxmsw28u_gl
+					   wxbase28u
+					   heekstinyxml )
+set_target_properties( ${targetname} PROPERTIES SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
+set_target_properties( ${targetname} PROPERTIES LINK_FLAGS -Wl,-Bsymbolic-functions )
+set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )
 
