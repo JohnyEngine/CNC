@@ -1,38 +1,24 @@
-cmake_minimum_required( VERSION 2.8 )
+project( heeksintf )
+cmake_minimum_required( VERSION 2.6 )
 
-set( targetname heeksintf )
+set ( CMAKE_BUILD_TYPE Debug )
 
-project( ${targetname} )
-
-set(CMAKE_CXX_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
-set(CMAKE_C_FLAGS_RELEASE "-Od -Ob1 -GF -Gy")
-
-add_definitions( -DUSE_GENERIC_TREECTRL )
-add_definitions( -DHEEKSCAD )
-add_definitions( -D__WXMSW__ )
-add_definitions( -DUNICODE -D_UNICODE )
-add_definitions( -DNOPCH )
-add_definitions( -DWNT )
-add_definitions( -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE )
-add_definitions( -D_SECURE_SCL=0 -D_SECURE_ATL=0 )
-add_definitions( -D__WXMSW__ )
-add_definitions( -D_MATH_DEFINES_DEFINED )
-add_definitions( -DTIXML_USE_STL )
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
+add_definitions ( -Wall -DHEEKSCAD -DUNICODE -DTIXML_USE_STL )
 
 # wxWidgets
 find_package( wxWidgets REQUIRED COMPONENTS base core gl )
+include(${wxWidgets_USE_FILE})
 
 # python libs
 find_package( PythonLibs REQUIRED )
 
-include_directories ( ${CMAKE_CURRENT_SOURCE_DIR}
-                      ${CMAKE_CURRENT_SOURCE_DIR}/../src
+include_directories ( ${CMAKE_SOURCE_DIR}
+                      ${CMAKE_SOURCE_DIR}/src
                       ${PYTHON_INCLUDE_DIRS}
-                      ${OpenCASCADE_INCLUDE_DIR}
                       ${wxWidgets_INCLUDE_DIRS}
                       ${libarea_INCLUDE_DIRS}
                     )
+set ( LIBRARY_OUTPUT_PATH ../bin )
 
 set( heeksintf_SRCS
     DoubleInput.cpp
@@ -105,7 +91,12 @@ set( heeksintf_HDRS
     strconv.h
    )
 
-add_library( ${targetname} STATIC ${heeksintf_SRCS} ${heeksintf_HDRS} )
+add_library( heeksintf SHARED ${heeksintf_SRCS} )
 
-set_target_properties( ${targetname} PROPERTIES SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
-set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )
+target_link_libraries( heeksintf ${PYTHON_LIBRARIES} ${wxWidgets_LIBRARIES} ${libarea_LIBRARIES} )
+
+set_target_properties( heeksintf PROPERTIES SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
+install( TARGETS heeksintf DESTINATION ${LIB_INSTALL_DIR} )
+
+file( GLOB sources ${heeksintf_SRCS} ${heeksintf_HDRS} )
+install( FILES ${sources} DESTINATION "share/heekscad/interface" COMPONENT heeksintf )

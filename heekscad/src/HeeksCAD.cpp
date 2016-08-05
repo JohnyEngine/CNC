@@ -1335,7 +1335,7 @@ static void WriteDXFEntity(HeeksObj* object, CDxfWrite& dxf_file, const wxString
 			double s[3], e[3];
 			extract(l->A, s);
 			extract(l->B, e);
-			dxf_file.WriteLine(s, e, Ttc(layer_name.c_str()));
+			dxf_file.WriteLine(s, e, Ttc(layer_name.c_str()), 0);
 		}
 		break;
 	case PointType:
@@ -1354,7 +1354,7 @@ static void WriteDXFEntity(HeeksObj* object, CDxfWrite& dxf_file, const wxString
 			extract(a->B, e);
 			extract(a->C, c);
 			bool dir = a->m_axis.Direction().Z() > 0;
-			dxf_file.WriteArc(s, e, c, dir, Ttc(layer_name.c_str()));
+			dxf_file.WriteArc(s, e, c, dir, Ttc(layer_name.c_str()), 0);
 		}
 		break;
       case EllipseType:
@@ -1366,7 +1366,7 @@ static void WriteDXFEntity(HeeksObj* object, CDxfWrite& dxf_file, const wxString
 			double maj_r = e->m_majr;
 			double min_r = e->m_minr;
 			double rot = e->GetRotation();
-			dxf_file.WriteEllipse(c, maj_r, min_r, rot, 0, 2 * M_PI, dir, Ttc(layer_name.c_str()));
+			dxf_file.WriteEllipse(c, maj_r, min_r, rot, 0, 2 * M_PI, dir, Ttc(layer_name.c_str()), 0);
                 }
 		break;
         case CircleType:
@@ -1375,7 +1375,7 @@ static void WriteDXFEntity(HeeksObj* object, CDxfWrite& dxf_file, const wxString
 			double c[3];
 			extract(cir->m_axis.Location(), c);
 			double radius = cir->m_radius;
-			dxf_file.WriteCircle(c, radius, Ttc(layer_name.c_str()));
+			dxf_file.WriteCircle(c, radius, Ttc(layer_name.c_str()), 0);
                 }
 		break;
 	default:
@@ -3053,6 +3053,13 @@ void on_edit_layer_name_suffixes_to_discard(const wxChar* value, HeeksObj* objec
 	config.Write(_T("LayerNameSuffixesToDiscard"), HeeksDxfRead::m_layer_name_suffixes_to_discard);
 }
 
+void on_add_uninstanced_blocks(bool value, HeeksObj* object)
+{
+	HeeksDxfRead::m_add_uninstanced_blocks = value;
+
+	HeeksConfig config;
+	config.Write(_T("DxfAddUninstancedBlocks"), HeeksDxfRead::m_add_uninstanced_blocks);
+}
 
 void on_stl_facet_tolerance(double value, HeeksObj* object){
 	wxGetApp().m_stl_facet_tolerance = value;
@@ -3366,6 +3373,7 @@ void HeeksCADapp::GetOptions(std::list<Property *> *list)
 	dxf_options->m_list.push_back(new PropertyCheck(_("ignore errors where possible"), HeeksDxfRead::m_ignore_errors, NULL, on_sel_dxf_read_errors));
 	dxf_options->m_list.push_back(new PropertyCheck(_("read points"), HeeksDxfRead::m_read_points, NULL, on_dxf_read_points));
 	dxf_options->m_list.push_back( new PropertyString(_("Layer Name Suffixes To Discard"), HeeksDxfRead::m_layer_name_suffixes_to_discard, this, on_edit_layer_name_suffixes_to_discard));
+	dxf_options->m_list.push_back(new PropertyCheck(_("add uninstanced blocks"), HeeksDxfRead::m_add_uninstanced_blocks, NULL, on_add_uninstanced_blocks));
 
 	file_options->m_list.push_back(dxf_options);
 	PropertyList* stl_options = new PropertyList(_("STL"));
@@ -4570,7 +4578,7 @@ void HeeksCADapp::GetPluginsFromCommandLineParams(std::list<wxString> &plugins)
 		cmdLineDesc[0].kind = wxCMD_LINE_PARAM;
 		cmdLineDesc[0].shortName = NULL;
 		cmdLineDesc[0].longName = NULL;
-		cmdLineDesc[0].description = _T("input files");
+		cmdLineDesc[0].description = "input files";
 		cmdLineDesc[0].type = wxCMD_LINE_VAL_STRING;
 		cmdLineDesc[0].flags = wxCMD_LINE_PARAM_OPTIONAL | wxCMD_LINE_PARAM_MULTIPLE;
 

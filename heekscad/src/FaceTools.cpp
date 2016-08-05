@@ -4,7 +4,6 @@
 
 #include "stdafx.h"
 #include "FaceTools.h"
-#include<BRepMesh_IncrementalMesh.hxx>
 
 static Standard_Boolean TriangleIsValid(const gp_Pnt& P1, const gp_Pnt& P2, const gp_Pnt& P3)
 { 
@@ -176,7 +175,7 @@ void DrawFace(TopoDS_Face face,void(*callbackfunc)(const double* x, const double
 		// ni  : sommet i du triangle courant
 		for (nt = 1; nt <= nnn; nt++)					
 		{
-			if (face.Orientation() == TopAbs_REVERSED)				// si la face est "reversed"
+			if (face.Orientation() == TopAbs_REVERSED)			// si la face est "reversed"
 				triangles(nt).Get(n1,n3,n2);						// le triangle est n1,n3,n2
 			else 
 				triangles(nt).Get(n1,n2,n3);						// le triangle est n1,n2,n3

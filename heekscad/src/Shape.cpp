@@ -23,7 +23,6 @@
 #include "../interface/PropertyVertex.h"
 #include "../interface/PropertyCheck.h"
 #include <locale.h>
-#include <BRepMesh_IncrementalMesh.hxx>
 
 // static member variable
 bool CShape::m_solids_found = false;
@@ -168,7 +167,7 @@ void CShape::CallMesh()
 {
 	double pixels_per_mm = wxGetApp().GetPixelScale();
 	BRepTools::Clean(m_shape);
-	BRepMesh_IncrementalMesh(m_shape, 1 / pixels_per_mm);
+	BRepMesh_IncrementalMesh(m_shape, 1/pixels_per_mm);
 }
 
 void CShape::glCommands(bool select, bool marked, bool no_color)
@@ -290,7 +289,7 @@ public:
 #ifdef TESTNEWSHAPE
 				//This will end up throwing 90% of the exceptions caused by a bad offset
 				BRepTools::Clean(new_shape);
-				BRepMesh::Mesh(new_shape, 1.0);
+				BRepMesh_IncrementalMesh(new_shape, 1.0);
 #endif
 
 				HeeksObj* new_object = CShape::MakeObject(new_shape, shape_for_tools->m_title_made_from_id ? wxString(_("Result of 'Offset Shape'")).c_str() : shape_for_tools->m_title.c_str(), SOLID_TYPE_UNKNOWN, shape_for_tools->m_color, shape_for_tools->GetOpacity());

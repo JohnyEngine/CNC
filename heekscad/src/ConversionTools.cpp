@@ -16,7 +16,6 @@
 #include "Sketch.h"
 #include "Group.h"
 #include "HArea.h"
-#include <BRepMesh_IncrementalMesh.hxx>
 
 #include <sstream>
 #include <vector>

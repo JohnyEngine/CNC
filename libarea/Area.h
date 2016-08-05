@@ -1,6 +1,7 @@
 // Area.h
 // Copyright 2011, Dan Heeks
 // This program is released under the BSD license. See the file COPYING for details.
+// repository now moved to github
 
 #ifndef AREA_HEADER
 #define AREA_HEADER
@@ -54,6 +55,7 @@ public:
 	void Subtract(const CArea& a2);
 	void Intersect(const CArea& a2);
 	void Union(const CArea& a2);
+	static CArea UniteCurves(std::list<CCurve> &curves);
 	void Xor(const CArea& a2);
 	void Offset(double inwards_value);
 	void Thicken(double value);
