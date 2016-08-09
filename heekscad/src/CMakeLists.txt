@@ -22,13 +22,13 @@ add_definitions( -DTIXML_USE_STL )
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W1")
 
 include_directories (
-	${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
     ${PYTHON_INCLUDE_DIRS}
     ${OPENGL_INCLUDE_DIR}
-	${OpenCASCADE_INCLUDE_DIR}
+    ${OpenCASCADE_INCLUDE_DIR}
     ${wxWidgets_INCLUDE_DIRS}
     ${libarea_INCLUDE_DIRS}
-	../interface/
+    ../interface/
     )
 
 set( heeksintf_SRCS
@@ -100,9 +100,9 @@ set( heeksintf_HDRS
     ../interface/ToolImage.h
     ../interface/ToolList.h
     ../interface/strconv.h
-   )	
-	
-	
+   )    
+    
+    
 set( heekscad_HDRS
     AboutBox.h
     AutoSave.h
@@ -303,22 +303,19 @@ set( heekscad_SRCS
 link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LINK_DIRECTORY} ${wxWidgets_LIB_DIR} )
 
 add_executable( ${targetname}
-				${heekscad_SRCS}
-				${heekscad_HDRS}
-				${heeksintf_SRCS}
-				${heeksintf_HDRS}
-				${CMAKE_CURRENT_SOURCE_DIR}/HeeksCAD.rc)
+                ${heekscad_SRCS}
+                ${heekscad_HDRS}
+                ${heeksintf_SRCS}
+                ${heeksintf_HDRS}
+                ${CMAKE_CURRENT_SOURCE_DIR}/HeeksCAD.rc)
 
 target_link_libraries( ${targetname}
-					   ${OpenCASCADE_LIBRARIES}
-                       ${OPENGL_LIBRARIES} 
-					   ${PYTHON_LIBRARIES}
-					   wxmsw28u_core
-					   wxmsw28u_aui
-					   wxmsw28u_gl
-					   wxbase28u
-					   libarea
-					   heekstinyxml )
+                       ${OpenCASCADE_LIBRARIES}
+                       ${OPENGL_LIBRARIES}
+                       ${PYTHON_LIBRARIES}
+                       ${wxWidgets_LIBRARIES}
+                       libarea
+                       heekstinyxml )
 set_target_properties( ${targetname} PROPERTIES VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
 #set_target_properties( ${targetname} PROPERTIES LINK_FLAGS -Wl,-Bsymbolic-functions )
 set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )

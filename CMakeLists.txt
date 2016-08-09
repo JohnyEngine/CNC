@@ -15,7 +15,7 @@ find_package( OpenGL REQUIRED )
 set( wxWidgets_LIB_DIR ${wxWidgets_ROOT_DIR}\\lib\\vc_dll CACHE STRING "" FORCE )
 set( wxWidgets_CONFIGURATION mswu CACHE STRING "" FORCE )
 
-find_package( wxWidgets REQUIRED)
+find_package( wxWidgets REQUIRED aui gl core base)
 
 if (MSVC_VERSION EQUAL "1800")
   set( MSVER_STR "vc12" )
@@ -80,4 +80,3 @@ SET_PROPERTY(TARGET heekstinyxml PROPERTY FOLDER "Common")
 
 add_subdirectory( heekscad/src )
 add_subdirectory( heekscnc/src )
-

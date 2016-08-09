@@ -29,10 +29,10 @@ include_directories (
     ${OpenCASCADE_INCLUDE_DIR}
     ${OPENGL_INCLUDE_DIR}
     ${wxWidgets_INCLUDE_DIRS}
-	${CMAKE_SOURCE_DIR}/heekscad
+    ${CMAKE_SOURCE_DIR}/heekscad
     ${CMAKE_SOURCE_DIR}/heekscad/src
-	${CMAKE_SOURCE_DIR}/heekscad/interface
-	${CMAKE_SOURCE_DIR}/heekscad/tinyxml
+    ${CMAKE_SOURCE_DIR}/heekscad/interface
+    ${CMAKE_SOURCE_DIR}/heekscad/tinyxml
     )
 
 set( platform_SRCS dllmain.cpp stdafx.cpp )
@@ -115,7 +115,7 @@ set( heekscnc_HDRS
     Tags.h
     Tools.h
     stdafx.h
-   )
+    )
 
 set( heekscnc_SRCS
     CNCPoint.cpp
@@ -165,20 +165,16 @@ set( heekscnc_SRCS
     Tags.cpp
     Tools.cpp
     stdafx.cpp
-   )
+    )
 
 link_directories( ${CMAKE_SOURCE_DIR}/lib ${OpenCASCADE_LINK_DIRECTORY} ${wxWidgets_LIB_DIR} )
-   
+
 add_library( ${targetname} SHARED ${heekscnc_SRCS} ${heekscad_SRCS} ${platform_SRCS} )
 target_link_libraries( ${targetname} 
-					   ${OpenCASCADE_LIBRARIES}
-                       ${OPENGL_LIBRARIES} 
-					   wxmsw28u_core
-					   wxmsw28u_aui
-					   wxmsw28u_gl
-					   wxbase28u
-					   heekstinyxml )
+                       ${OpenCASCADE_LIBRARIES}
+                       ${OPENGL_LIBRARIES}
+                       ${wxWidgets_LIBRARIES}
+                       heekstinyxml )
 set_target_properties( ${targetname} PROPERTIES SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH} )
 set_target_properties( ${targetname} PROPERTIES LINK_FLAGS -Wl,-Bsymbolic-functions )
 set_target_properties( ${targetname} PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS" )
-
