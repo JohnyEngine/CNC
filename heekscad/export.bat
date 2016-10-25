@@ -19,6 +19,8 @@ rem HeeksCAD
 mkdir "%HEEKSCADPATH%\bitmaps"
 copy /y "%HEEKSCADSOURCEPATH%\bitmaps\*.png" "%HEEKSCADPATH%\bitmaps"
 copy /y "%HEEKSCADSOURCEPATH%\bitmaps\font.glf" "%HEEKSCADPATH%\bitmaps\font.gl "
+mkdir "%HEEKSCADPATH%\bitmaps\angle"
+copy /y "%HEEKSCADSOURCEPATH%\bitmaps\angle\*.png" "%HEEKSCADPATH%\bitmaps\angle"
 mkdir "%HEEKSCADPATH%\icons"
 copy /y "%HEEKSCADSOURCEPATH%\icons\*.png" "%HEEKSCADPATH%\icons"
 copy /y "%WXBINARIESPATH%\wxmsw30u_gl_vc_custom.dl"l "%HEEKSCADPATH%"
