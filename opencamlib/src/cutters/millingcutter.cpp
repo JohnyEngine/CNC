@@ -23,6 +23,22 @@
 #include "millingcutter.hpp"
 #include "numeric.hpp"
 
+#if (_MSC_VER == 1900)
+namespace boost {
+	template <class T>
+	T* get_pointer(T* c)
+	{
+		return c;
+	}
+
+	template <>
+	class ocl::MillingCutter const volatile * __cdecl get_pointer<class ocl::MillingCutter const volatile >(class ocl::MillingCutter const volatile * c)
+	{
+		return c;
+	}
+}
+#endif
+
 namespace ocl
 {
 

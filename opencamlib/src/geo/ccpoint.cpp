@@ -22,6 +22,22 @@
 
 #include "ccpoint.hpp"
 
+#if (_MSC_VER == 1900)
+namespace boost {
+	template <class T>
+	T* get_pointer(T* c)
+	{
+		return c;
+	}
+
+	template <>
+	class ocl::CCPoint const volatile * __cdecl get_pointer<class ocl::CCPoint const volatile >(class ocl::CCPoint const volatile * c)
+	{
+		return c;
+	}
+}
+#endif
+
 namespace ocl
 {
     

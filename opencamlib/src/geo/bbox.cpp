@@ -24,6 +24,22 @@
 #include "point.hpp"
 #include "triangle.hpp"
 
+#if (_MSC_VER == 1900)
+namespace boost {
+	template <class T>
+	T* get_pointer(T* c)
+	{
+		return c;
+	}
+
+	template <>
+	class ocl::Bbox const volatile * __cdecl get_pointer<class ocl::Bbox const volatile >(class ocl::Bbox const volatile * c)
+	{
+		return c;
+	}
+}
+#endif
+
 namespace ocl
 {
 
