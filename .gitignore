@@ -6,6 +6,9 @@
 *.opensdf
 *.idb
 *.pdb
+*.lnk
+*.ngc
+*.stl
 CMakeCache.txt
 HeeksCAD.exe
 Build

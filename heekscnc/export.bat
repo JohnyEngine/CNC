@@ -21,7 +21,7 @@ copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\depthop\*.png" "%HEEKSCNCPATH%\bitmaps\dep
 mkdir "%HEEKSCNCPATH%\bitmaps\drilling"
 copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\drilling\*.png" "%HEEKSCNCPATH%\bitmaps\drilling"
 mkdir "%HEEKSCNCPATH%\bitmaps\pattern"
-copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\pattern\*.png" "%HEEKSCNCPATH%\bitmaps\drilling"
+copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\pattern\*.png" "%HEEKSCNCPATH%\bitmaps\pattern"
 mkdir "%HEEKSCNCPATH%\bitmaps\pocket"
 copy /y "%HEEKSCNCSOURCEPATH%\bitmaps\pocket\*.png" "%HEEKSCNCPATH%\bitmaps\pocket"
 mkdir "%HEEKSCNCPATH%\bitmaps\profile"
